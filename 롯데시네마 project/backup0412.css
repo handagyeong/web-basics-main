@@ -1,0 +1,301 @@
+body{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    height: 3000px;
+
+    position:relative; 
+}
+
+ .black {
+     background: black;
+     color:white;
+ }
+
+.material-icons {
+    color: #F6F5F0;
+    font-size: 15px;
+    cursor: pointer;
+    /* display:flex; */
+    margin:0px 10px 5px 1px;  
+    /* position:relative;  */
+}
+
+.header {
+    position:absolute;
+}
+
+.ad{
+        margin:0 auto;
+        position:relative;
+        background-color: #abc9e5;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+}
+
+#close {
+    /* align-items:center; */
+    position: relative;
+    cursor:pointer;
+    margin-top:25px;
+    font-size: 30px;
+}
+
+
+
+.top {
+    margin: auto;
+    width:100%;
+    height:500px;
+    background-color: #abc9e5;
+    
+}
+.wrapper {
+    width: 1100px;
+    margin-top: 25px;
+    justify-items: center;
+    display: flex;
+    margin: auto;
+}
+
+
+.wrappercontents {
+    margin-top: 30px;
+    display:flex;
+}
+
+#itemcontents{
+    display: flex;
+
+}
+.logo {
+    color: none;
+    background-image:url(../image/logo.gif);
+    width: 250px;
+    height: 40px;
+    margin: auto;
+    
+ }
+
+
+
+.contents{
+    display: flex;
+}
+.contentslist {
+    display: flex;
+} 
+
+#hre {
+    width: 1100px;
+    position: relative;
+    /* left: 50%;
+    margin-left: -550px; */
+}
+
+.submenu {
+    width: 1100px;
+    position: absolute;
+    align-items: center;
+    /* overflow:hidden; */
+    /* flex-direction; */
+    left: 50%;
+    margin-left: -550px;
+}
+
+.main {
+    width: 1100px;
+    display: flex;
+    margin:0 auto;
+    justify-content: center;
+}
+
+.header_primary {
+    font-size:20px;
+    position: absolute;
+
+    
+
+}
+
+.material {
+    position:absolute;
+    right:0px;
+    margin-top:5px;
+}
+
+
+.item_title1 {
+    margin: 5px 30px 5px 30px;
+}
+
+.background {
+        width:100%;
+        height:774px;
+        z-index:-100;
+        margin:0 auto;
+    }  
+
+.aside {
+    width: 8.5%;
+    height: 774px;
+    position: relative;
+}
+
+#right {
+    float:right;
+}
+#left {
+    float:left;
+}
+
+#back {
+    font-size:60px;
+    float: right;
+    margin:350px auto;
+}
+
+#forward {
+    font-size:60px;
+    float:left;
+    margin:350px auto;
+}
+
+.bgimg {
+    width:83%
+    
+}
+/* 스페셜바 */
+.specialbar {
+    width: 980px;
+    height: 101px;
+    margin: 62px auto;
+}
+.special {
+    font-size: 20px;
+    font-weight:bold
+}
+
+#specialmore {
+    float:right;
+    color:black;
+}
+
+#sp {
+    width: 980px;
+    border-top:1px dashed;
+    color:grey
+}
+
+.specialwrap {
+    display:flex;
+}
+
+.spw {
+    margin:auto;
+}
+
+/* 이벤트바 */
+.eventbar {
+    width:980px;
+    height:540px;
+    margin:auto;
+}
+
+.event {
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}   
+
+#eventmore {
+    color:black;
+    float:right;
+}
+
+/* 이벤트그리드 */
+.line1 {
+    display:flex;
+    height:260px;
+}
+.line2{
+    display:flex;
+}
+
+#item1 {
+    width:181.99px;
+    height:250px;
+    border-radius: 10px;
+    margin-right:10px;
+}
+#item2 {
+    width:181.99px;
+    height:250px;
+    margin-right:10px;
+    border-radius: 10px;
+}
+#item3 {
+    width:285px;
+    height:250px;
+    margin-right:10px;
+    border-radius: 10px;
+}
+#item4 {
+    width:295.99px;
+    height:510.99px;
+    border-radius: 10px;
+}
+#item5 {
+width:477.99px;
+height:250px;
+border-radius: 10px;
+margin-right:10px;
+}
+#item6 {
+    width:181.99px;
+    height:250px;
+    border-radius: 10px;
+}
+
+/* 시사회/무대인사 */
+
+.pressbar {
+    width:980px;
+    height:214.82px;
+    margin:auto;
+}
+
+.press {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight:bold
+    
+}
+
+#pressmore {
+    color:black;
+    float:right;
+}
+
+.pressline1 {
+    margin-top:10px;
+    display:flex;
+}
+
+.pressitem {
+    width:319px;
+    height:186.92px;
+    margin:5px;
+}
+
+#pi1 {
+    border-radius: 10px;
+    }
+#pi2 {
+    border-radius: 10px;
+}
+#pi3 {
+    border-radius: 10px;
+}

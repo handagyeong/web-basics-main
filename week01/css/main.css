@@ -1,0 +1,43 @@
+body {
+    padding: 4rem;
+    white-space: nowrap;
+    background-color: lightblue;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    width: 50%;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+#title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow:5px 5px #68ff75; 
+}
+
+#love {
+   color: deeppink;
+   font: bold;
+    
+}
+.text {
+    width: 50%;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.caluse+.caluse {
+    margin-bottom: 2.25rem;
+}
+
+
