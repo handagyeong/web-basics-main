@@ -15,3 +15,10 @@ function showClock() {
     setTimeout(showclock,1000);
     
 }
+$(window).on('scroll',function(){ 
+    if($(window).scrollTop()){
+         $('#menuline2').addClass('active');
+    }
+    else{ 
+        $('#menuline2').removeClass('active'); } });
+
