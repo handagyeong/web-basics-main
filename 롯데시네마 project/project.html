@@ -39,15 +39,20 @@
         </div>
 
         <div id="bgimage" href="#none">
+
             <div class="background">
                 <aside id="right" class="aside">
                     <img id="forward" class="asidebg"
                         src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_31_wht.png">
                 </aside>
+
                 <aside id="left" class="aside">
                     <img id="back" class="asidebg"
                         src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_31_wht.png">
                 </aside>
+            </div>
+            <div class="playbtn">
+                <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
             </div>
 
             <div class="topmenu">    
@@ -76,7 +81,8 @@
                     </div>
                     
                     <!-- 로고 ; 클릭시 새로고침 -->
-                    <a onClick="window.location.reload()" class="logo" style="cursor: pointer;"><img src="./image/logo.png" alt="로고"></a>
+                    <a onclick="location.reload();" class="logo">
+                        <img src="./image/logo.png"></a>
                         
                    <!-- 멤버십 고객센터 로그인 -->
                     <div class="line1_side">
@@ -100,7 +106,6 @@
                     <div class="menuline2width">
                     <div class="line2_main">
                         <ul class="main">  
-                            <div id="main"></div>
                             <div id="main_title1" class="main_title" >예매</div>
                             <div id="main_title2" class="main_title" >영화</div>
                             <div id="main_title3" class="main_title" >영화관</div>
@@ -124,8 +129,9 @@
                     </div>
                 </div>
             </div>
+        </header>
         </div>
-    </header>
+    
 
 
     
@@ -228,82 +234,78 @@
     </div>
 
     <!-- 공간채우기 -->
-    <div class="affer"></div>
+    <div class="blackbg"></div>
     
-
-
-
-    </div>    
-        <!-- 스페셜관 -->
-        <div class="specialbar">
-            <div class="barname">
-                스페셜관
-                <span id="specialmore" class="material-icons">
-                    더보기 arrow_forward_ios 
-                    </span>
-            </div>
-            <hr id="sp">
-            <ul class="specialwrap">
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/e2a94c82115c46f7b326baee6e10266a.png">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/3ffca854b1844fdc8b54d8d9db45a03f.png">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/ff43cb260a2647dbb5f3c62b709103c4.png">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/c9078226c9ad4085b1b629bee2aba138.png">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/61fb906fbd9b4ff1b34d6e0bd78dc655.png">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/2a366799460a49359bf93250f50852cf.png">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/208a5ede362244fb8ab2e5cc3ab07529.PNG">
-                </li>
-                <li class="spw">
-                    <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/5c23288d3a104f7fa4f7d3e725a2c6a8.PNG">
-                </li>
-            </ul>
+    <!-- 스페셜관 -->
+    <div class="specialbar">
+        <div class="barname">
+            스페셜관
+            <span id="specialmore" class="material-icons">
+                더보기 arrow_forward_ios 
+                </span>
         </div>
+        <hr id="sp">
+        <ul class="specialwrap">
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/e2a94c82115c46f7b326baee6e10266a.png">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/3ffca854b1844fdc8b54d8d9db45a03f.png">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/ff43cb260a2647dbb5f3c62b709103c4.png">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/c9078226c9ad4085b1b629bee2aba138.png">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/61fb906fbd9b4ff1b34d6e0bd78dc655.png">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/2a366799460a49359bf93250f50852cf.png">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/208a5ede362244fb8ab2e5cc3ab07529.PNG">
+            </li>
+            <li class="spw">
+                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/5c23288d3a104f7fa4f7d3e725a2c6a8.PNG">
+            </li>
+        </ul>
+    </div>
 
-        <!-- 이벤트 -->
-        <div class="eventbar">
-            <div class="event">
-                이벤트
-                <span id="eventmore" class="material-icons">
-                    더보기 arrow_forward_ios 
-                    </span>
-            </div>
-            <ul class="grid-container">
-                <div class="line1">
-                <li class="item1">
-                    <img id="item1" src="https://caching.lottecinema.co.kr//Media/Event/1752c8cccf6c4330877975244736bd68.jpg">
-                </li>
-                <li class="item2">
-                    <img id="item2" src="https://caching.lottecinema.co.kr//Media/Event/4f43e222cb1841a1b50190c147b93921.jpg">
-                </li>
-                <li class="item3">
-                    <img id="item3" src="https://caching.lottecinema.co.kr//Media/Event/66eb918a37c94cb2889c77d060b2ec75.jpg">
-                </li>  
-                <li class="item4">
-                    <img id="item4" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Inbyu/Inbyu_295511.png">
-                </li>
-            </div>
-            <div class="line2">
-                <li class="item5">
-                    <img id="item5" src="https://caching.lottecinema.co.kr//Media/Event/54250fc5c47844bea4e6e4c212a1957e.jpg">
-                </li>
-                <li class="item6">
-                    <img id="item6" src="https://caching.lottecinema.co.kr//Media/Event/3145ddaeed054c5d89adc3e3a34f768b.jpg">
-                </li></div>
-            </ul>
-              
+    <!-- 이벤트 -->
+    <div class="eventbar">
+        <div class="event">
+            이벤트
+            <span id="eventmore" class="material-icons">
+                더보기 arrow_forward_ios 
+                </span>
         </div>
+        <ul class="grid-container">
+            <div class="line1">
+            <li class="item1">
+                <img id="item1" src="https://caching.lottecinema.co.kr//Media/Event/1752c8cccf6c4330877975244736bd68.jpg">
+            </li>
+            <li class="item2">
+                <img id="item2" src="https://caching.lottecinema.co.kr//Media/Event/4f43e222cb1841a1b50190c147b93921.jpg">
+            </li>
+            <li class="item3">
+                <img id="item3" src="https://caching.lottecinema.co.kr//Media/Event/66eb918a37c94cb2889c77d060b2ec75.jpg">
+            </li>  
+            <li class="item4">
+                <img id="item4" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Inbyu/Inbyu_295511.png">
+            </li>
+        </div>
+        <div class="line2">
+            <li class="item5">
+                <img id="item5" src="https://caching.lottecinema.co.kr//Media/Event/54250fc5c47844bea4e6e4c212a1957e.jpg">
+            </li>
+            <li class="item6">
+                <img id="item6" src="https://caching.lottecinema.co.kr//Media/Event/3145ddaeed054c5d89adc3e3a34f768b.jpg">
+            </li></div>
+        </ul>
+            
+    </div>
 
     <!-- 시사회/무대인사  -->
     <div class="pressbar">
@@ -357,13 +359,13 @@
             <div class="noticesentence">
                 <div class="noticelist" id="notice1">
                 롯데시네마 영구VIP 서비스 종료 안내</div>
-                <!-- 자바써야함 씨발 -->
             </div>
             <div id="noticemore" class="material-icons">
                 더보기 arrow_forward_ios 
             </div>
         </div>
     </div>
+
     <hr id="dp">
 
     <div class="none"></div>
