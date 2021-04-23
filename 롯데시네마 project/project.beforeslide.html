@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
     <!-- Google Material Design -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./css/project.css">
-    <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/project.beforeslide.css">
+    <script defer src="./js/main.beforeslide.js"></script>
     <!-- 스크롤바 기능 이용 소스 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
@@ -28,8 +28,9 @@
        </style>
 </head>
 <body onload="showClock()">
-    <div class="black">
     <header>
+    <div class="black">
+    
         <div id="top" class="ad">
            <!-- 헤더 광고 섹션 --> 
            <img id="adimage" src="./image/advertisement.jpg" alt="광고이미지">
@@ -39,38 +40,47 @@
         </div>
 
         <div id="bgimage" href="#none">
+            <div id="slider" class="backgroundslider">
+                <div class="slide1">
+                    <div class="slide__content">
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="slide__content">
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="slide__content">
+                    </div>
+                </div>
+                <div class="slide4">
+                    <div class="slide__content">
+                    </div>
+                </div>
+                <div class="slide5">
+                    <div class="slide__content">
+                    </div>
+                </div>
+            </div>
+        </div>
 
             <div class="background">
                 <aside id="right" class="aside">
                     <img id="forward" class="asidebg"
                         src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_31_wht.png">
                 </aside>
-
+                
                 <aside id="left" class="aside">
                     <img id="back" class="asidebg"
                         src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_31_wht.png">
                 </aside>
-            </div>
-            <div class="playbtn">
-                <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
-            </div>
-            <div class="dotsbar">
-                <span class="dots">
-                    <div class="dot dot1"></div>
-                    <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
-                    <div class="dot dot4"></div>
-                    <div class="dot dot5"></div>
-                    <div class="dot dot6"></div>
-                    <div class="material-icons" id="startbtn" >
-                        play_arrow
-                        </div>
-                    <div id="stopbtn" class="material-icons">
-                        stop
-                    </div>
-                </span>
+                <div class="playbtn">
+                    <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
+                </div>
             </div>
 
+
+         
             <div class="topmenu">    
                 <!-- 상단메뉴 첫번째줄 -->
                 <div class="menuline1">
@@ -94,7 +104,6 @@
                                     src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_follow_wht.png">&nbsp;팔로우
                             </a>
                         </span>
-
                     </div>
                     
                     <!-- 로고 ; 클릭시 새로고침 -->
@@ -147,9 +156,18 @@
                 </div>
             </div>
         </header>
-        </div>
     
-
+    
+        <div class="dotsbar">
+            <span class="dots">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+                <div class="dot dot6"></div>
+            </span>
+        </div>
 
     
 

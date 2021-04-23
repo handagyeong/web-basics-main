@@ -6,11 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <title>Document</title>
+    <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     <link rel="stylesheet" href="./css/mang.css">
+    
 </head>
 <body>
-    <p onclick = "popAlert()">HEllo, world! </p> 
-    <script src="./js/mang.js"
-    ></script> 
+    <script src="./js/mang.js"></script>
+<!-- MAIN SECTION -->
+<main id="about">
+    <div class="wrapper">
+        <div id="slider">
+            <div class="material-icons arrow--left">
+                arrow_left
+            </div>
+            <div class="slide slide1">
+                <div class="slide__content">
+                    <span>I1</span>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide__content">
+                    <span>I2</span>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide__content">
+                    <span>I3</span>
+                </div>
+            </div>
+            <div class="slide slide4">
+                <div class="slide__content">
+                    <span>I4</span>
+                </div>
+            </div>
+            <div class="slide slide5">
+                <div class="slide__content">
+                    <span>I5</span>
+                </div>
+            </div>
+            <div class="slide slide6">
+                <div class="slide__content">
+                    <span>I6</span>
+                </div>
+            </div>
+            <div class="material-icons arrow--right">
+                arrow_right
+            </div>
+            <div class="dots">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+                <div class="dot dot6"></div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

@@ -3,8 +3,10 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     position:relative; 
 }
-.header {
+header {
     position:relative;
+    height:854px;
+    background-color: black;
 }
 
 
@@ -15,17 +17,19 @@ body{
     color:black;
     float:right;
 }
- .black {
+ /* .black {
      background-color:black;
-     z-index:-99;
-}
+     z-index:-3;
+} */
 
  /* 헤더광고 */
 .top {
     margin: auto;
     width:100%;
     height:500px;
-    background-color: #abc9e5;
+    /* background-color: #abc9e5; */
+    /* position:absolute;
+    margin-top:0px; */
 }
 
 .ad{
@@ -51,6 +55,31 @@ body{
     height:774px;
     background-size:100%;
     background-repeat:no-repeat;
+    background-position: center;
+    /* position:relative; */
+    position: absolute;
+    z-index: 1;
+}
+.backgroundslider {
+    width:100%;
+    height:774px;
+    margin:0 auto;
+    position:absolute;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 5;
+}
+.backgroundslider #slider{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width:1920px;
+    height:774px;
+    background-size:100%;
+    background-repeat:no-repeat;
+}
+
+.backgroundslider #slider .slide1 {
     background:
     linear-gradient(
         to top,
@@ -65,54 +94,111 @@ body{
         rgba(0, 0, 0, 0.5) 90%,
         rgba(0, 0, 0, 0.75) 95%,
         rgba(0, 0, 0, 1) 100%
-      ),
-      url('https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg');
-    background-position: center;
-    position:relative;
+      ),url('https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0415/RainStory_1920774.jpg');
 }
-.playbtn {
-    position:absolute;
-    width:1920px;
-    height:774px;
-    z-index: 0
+
+.backgroundslider #slider .slide2 {
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),url('https://caching2.lottecinema.co.kr/lotte_image/2021/MemoriesOfTomorrow/0420/MemoriesOfTomorrow_1920774.jpg');
 }
-#playbtn {
-    margin-top:360px;
-    margin-left:935px;
-    cursor: pointer;
+
+.backgroundslider #slider .slide3 {
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),url('https://caching2.lottecinema.co.kr/lotte_image/2021/YoungAdultMatters/0414/YoungAdultMatters_1920774.jpg');
 }
+
+.backgroundslider #slider .slide4 {
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),url('https://caching2.lottecinema.co.kr/lotte_image/2021/TheCourier/0415/TheCourier_1920774.jpg');
+}
+
+.backgroundslider #slider .slide5 {
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),url('https://caching2.lottecinema.co.kr/lotte_image/2021/Yuda/0420/Yuda_1920774.jpg');
+}
+
+.slide__content {
+    width: 100%;
+    height: 774px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+margin:auto;
+    /* align-items: center; */
+}
+
 /* dots */
 .dotsbar {
     width:980px;
     position:relative;
     z-index: 10;
-    float:right;
-    
-
+    left:50%;
+    margin-left:-490px;
 }
 .dots {
     position:absolute;
     padding: 10px;
     display: flex;
-    align-items: center;
-    margin-top:720px;
-    left:40%;
-}
-
-#startbtn {
-    font-size: 12px;
-    color:white;
-    margin:-2px 5px;
-}
-#stopbtn {
-    font-size: 12px;
-    color:white;
-    margin:-2px 2px;
+    float:right;
+    margin-bottom:0px;
+    margin-left:876px;
 }
 
 .dot {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: rgba(0,0,0,0.5);
     margin: 0 3px;
@@ -120,16 +206,39 @@ body{
 }
 
 .dots .dot1 {
-    background: black;
+    background: #1107ff;
 }
+
+.playbtn {
+    position:relative;
+    width:83%;
+    height:774px;
+    margin:auto;
+    z-index: 1;
+}
+#playbtn {
+    position:relative;
+    left:50%;
+    margin-left:-25px;
+    top:50%;
+    margin-top:-27px;
+    cursor: pointer;   
+}
+
 .background {
     width:100%;
     height:774px;
     margin:0 auto;
     position:absolute;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 3;
+    /* 1에서 잠시 -2 */
+    /* z-index: -2; */
 }
+
 .aside {
-    z-index:1;
+    z-index:3;
     width: 8.5%;
     height: 774px;
     position: relative;
@@ -143,12 +252,13 @@ body{
 .asidebg {
     cursor: pointer;
 }
-
 /* 상단메뉴첫째줄 */
 .topmenu {
+    position:relative;
     width:980px;
     margin:auto;
     height: 194px;
+    z-index: 3;
 }
 
 .menuline1 {

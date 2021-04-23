@@ -1,44 +1,67 @@
+function showClock() {
+    var currentDate = new Date();
+    var divClock = document.getElementById("clock");
+    // if (currentDate.getMinutes()<10) {
+    //     var msg = "0" + currentDAte.getMinutes()+" 기준";
+    // }
+    // else {
+    //     var msg = currentDAte.getMinutes()+" 기준";
+    // }
+    // // msg+=currentDate.getMinutes()+"분";
+    
+    var msg=currentDate.getMonth()+"."+currentDate.getDate()+" "+
+    currentDate.getHours()+":"+currentDate.getMinutes()+" 기준";
+    divClock.innerText=msg;
+    setTimeout(showclock,1000);
+    
+}
+$(window).on('scroll',function(){ 
+    if($(window).scrollTop()){
+         $('#menuline2').addClass('active');
+    }
+    else{ 
+        $('#menuline2').removeClass('active'); } });
+
+
+
+// 배경슬라이드쇼
+
 // 슬라이드 이미지 선택자
-const sliderImages = document.querySelectorAll('.slide')
+const sliderImages = document.querySelectorAll('#slider')
 // 오른쪽 화살표 선택자
-const arrowRight = document.querySelector('.arrow--right')
+const arrowRight = document.querySelector('#right')
 // 왼쪽 화살표 선택자
-const arrowLeft = document.querySelector('.arrow--left')
+const arrowLeft = document.querySelector('#left')
 // 현재 보여지는 슬라이드 번호
 let current = 0;
-
-// 동그라미들 선택자
+// 동그라미 선택자
 const dots = document.querySelectorAll('.dot')
 const dot1 = document.querySelector('.dot1')
 const dot2 = document.querySelector('.dot2')
 const dot3 = document.querySelector('.dot3')
 const dot4 = document.querySelector('.dot4')
 const dot5 = document.querySelector('.dot5')
-const dot6 = document.querySelector('.dot6')
 
 // 슬라이드 이미지 리셋
 const reset = () => {
-    // 슬라이드 이미지 모두 보이지 않는 상태로 설정
-    sliderImages.forEach((el) => el.style.display = 'none')
-    dots.forEach((el) => el.style.background = '#F6F5F0')
+    sliderImages.forEach((el) => el.getElementsByClassName.display = 'none')
+    dots.forEach((el) => el.getElementsByClassName.background = 'rgba(0,0,0,0.5)')
 }
 
 // 자동 슬라이드 기능을 위한 함수
 const autoSlide = () => {
-    // 모든 슬라이드 이미지를 보이지 않는 상태로 설정
+    // 모든슬라이드를 안보이게
     reset()
-    // 마지막 슬라이드 이미지라면,
-    if (current === sliderImages.length - 1) {
-        // current 값을 -1로 설정
+    // 마지막슬라이드라면
+    if (current === sliderImages.length -1) {
         current = -1
-    } 
-    
-    // 마지막 슬라이드 이미지가 아니라면,
-    // current 값에 1을 더함
+    }
+    // 마지막 슬라이드가 아니라면 current 에 1을 더함
     current++
-    // 슬라이드 이미지 배열에서 index값이 current인 이미지를 보이는 상태로 설정 
+    // 슬라이드 이미지 배열에서 index값이 current인 이미지를 보이는 상태로 설정
     sliderImages[current].style.display = 'block'
     dots[current].style.background = '#1107ff'
+    
 }
 
 // 수동 슬라이드를 위한 함수들
@@ -53,7 +76,6 @@ const slideLeft = () => {
     // current값을 1만큼 뺌
     current--;
 }
-
 // 2. 오른쪽 화살표에 클릭 이벤트가 발생할 시 작동할 함수
 const slideRight = () => {
     // 모든 슬라이드 이미지 display를 none으로 리셋
@@ -76,7 +98,6 @@ arrowLeft.addEventListener('click', function() {
     }
     slideLeft()
 })
-
 // 왼쪽 화살표를 클릭할 시 작동하는 익명의 함수
 arrowRight.addEventListener('click', function() {
     // 만약 current값이 슬라이드 이미지 배열 길이 - 1만큼의 값이라면,
@@ -87,7 +108,6 @@ arrowRight.addEventListener('click', function() {
     }
     slideRight()
 })
-
 // 첫번째 동그라미 클릭할 시 작동하는 익명의 함수
 dot1.addEventListener("click", function(){
     reset()
@@ -124,14 +144,6 @@ dot4.addEventListener("click", function(){
 dot5.addEventListener("click", function(){
     reset()
     current = 4
-    sliderImages[current].style.display = 'block';
-    dots[current].style.background = '#1107ff'
-})
-
-// 여섯번째 동그라미 클릭할 시 작동하는 익명의 함수
-dot6.addEventListener("click", function(){
-    reset()
-    current = 5
     sliderImages[current].style.display = 'block';
     dots[current].style.background = '#1107ff'
 })
