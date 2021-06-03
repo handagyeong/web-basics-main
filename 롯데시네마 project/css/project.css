@@ -542,6 +542,7 @@ margin-right:10px;
 .noticebar {
     width: 980px;
     margin: auto;
+    font-size: 13px;
 }
 .noticeline1 {
     display:flex;
@@ -552,25 +553,32 @@ margin-right:10px;
     font-size: 13px;
     margin: 5px 0px 5px 10px;
     border-right: 1px solid#707070;
-    padding-right:20px;
-    border-width: 2px;
+    padding-right: 1px;
+    padding-top: 2px;
+    border-width: 1px;
+    width:64px;
 }
+    /* Swiper 슬라이더 */
 
-.noticesentence {
-    width:840px;
-    height:17.78px;
-    font-size: 13px;
-
-}
-.noticelist {
-    margin-left:20px;
-    margin: 5px 0px 5px 10px;
-}
-#notice1 {
-    color:black;
-
-}
-
+    .swiper-container {
+        width: 840px;
+        height: 30px;
+        overflow: hidden;
+        /* display: flex; */
+        margin-left:20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .swiper-slide {
+        background: #fff;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-top:1.5px;
+        /* object-fit: cover; */
+    }
+    
 
 #dp {
     width: 980px;

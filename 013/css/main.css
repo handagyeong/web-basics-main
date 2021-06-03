@@ -1,0 +1,49 @@
+/* 실제 콘텐츠 영역을 잡아주는 inner입니다 */
+
+.inner {
+    /* 너비 값을 주고 margin의 좌우값을 auto로 설정하여 본 요소를 가운데 정렬합니다 */
+    width: 960px;
+    margin: 0 auto;
+    /* scrollToTop 요소가 잘 작동하는지 확인하고자 */
+    /* 페이지를 길게 만들기 위해 inner에 높이를 지정했습니다 */
+    height: 3000px;
+    /* inner의 하위 요소에 margin값을 설정하는 경우 잘 적용되도록 */
+    /* display 속성은 flex로 설정합니다 */
+    display: flex;
+}
+
+/* 버튼 */
+
+/* 페이지 내 모든 버튼 요소는 기본적으로 클래스 속성에 btn을 갖도록 합니다 */
+
+.btn {
+    cursor: pointer;
+}
+
+/* 둥둥 뜨는 애니메이션 */
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* 페이지 내에 scrollToTop 기능을 갖는 모든 요소는 둥둥이로 만듭니다 */
+
+.scrollToTop {
+    animation: float 6s ease infinite;
+    width: 100px;
+    /* 블록 속성을 가진 요소로 만듭니다 */
+    display: inline-block;
+    /* margin-top을 auto로 설정하면 페이지 맨 아래에 찰싹 붙는 요소를 쉽게 만들 수 있습니다 */
+    /* 단 부모 요소에 display: flex가 있어야 합니다 */
+    margin-top: auto;
+    /* 부모 요소의 영역 내에서 본 요소가 가장 우측에 위치하도록 합니다 */
+    margin-left: auto;
+}

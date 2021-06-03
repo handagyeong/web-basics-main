@@ -19,6 +19,9 @@
     <script defer src="./js/main.js"></script>
     <!-- 스크롤바 기능 이용 소스 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- 수직슬라이더 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- a 태그 색 및 밑줄 없애기 -->
     <style type="text/css">
@@ -367,16 +370,20 @@
                 </li>
         </ul>
     </div>
-        <!-- 공지사항 -->
+    <!-- 공지사항 -->
     <div class="noticebar">
         <div class="noticeline1">
             <div class="notice">
                 공지사항
             </div>
-            <div class="noticesentence">
-                <div class="noticelist" id="notice1">
-                롯데시네마 영구VIP 서비스 종료 안내</div>
+        <!-- 공지사항 swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">롯데시네마 영구VIP 서비스 종료 안내</div>
+                <div class="swiper-slide">KT멤버십 영화예매 적립 서비스 안내</div>
+                <div class="swiper-slide">마스크 착용 의무화 행정명령 시행 안내</div>
             </div>
+        </div>
             <div id="noticemore" class="material-icons">
                 더보기 arrow_forward_ios 
             </div>
