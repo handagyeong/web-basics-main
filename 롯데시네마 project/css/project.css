@@ -4,7 +4,7 @@ body{
     position:relative; 
 }
 .header {
-    position:relative;
+    position:absolute;
 }
 
 
@@ -15,9 +15,10 @@ body{
     color:black;
     float:right;
 }
- .black {
+.black {
      background-color:black;
-     z-index:-99;
+    position: relative;
+     
 }
 
  /* 헤더광고 */
@@ -26,16 +27,18 @@ body{
     width:100%;
     height:500px;
     background-color: #abc9e5;
+    z-index: 3;
 }
 
 .ad{
-        margin:0 auto;
-        position:relative;
-        background-color: #abc9e5;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        margin: auto;
+    margin:0 auto;
+    position:relative;
+    background-color: #abc9e5;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    z-index: 3;
         
 }
 #close {
@@ -44,111 +47,15 @@ body{
     margin-top:30.5px;
 }
 
-/* 배경 */
-#bgimage {
-    width:1920px;
-    margin:0 auto;
-    height:774px;
-    background-size:100%;
-    background-repeat:no-repeat;
-    background:
-    linear-gradient(
-        to top,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0.75) 5%,
-        rgba(0, 0, 0, 0.5) 10%,
-        rgba(0, 0, 0, 0.25) 15%,
-        rgba(0, 0, 0, 0) 20%,
-
-        rgba(0, 0, 0, 0) 80%,
-        rgba(0, 0, 0, 0.25) 85%,
-        rgba(0, 0, 0, 0.5) 90%,
-        rgba(0, 0, 0, 0.75) 95%,
-        rgba(0, 0, 0, 1) 100%
-      ),
-      url('https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg');
-    background-position: center;
-    position:relative;
-}
-.playbtn {
-    position:absolute;
-    width:1920px;
-    height:774px;
-    z-index: 0
-}
-#playbtn {
-    margin-top:360px;
-    margin-left:935px;
-    cursor: pointer;
-}
-/* dots */
-.dotsbar {
-    width:980px;
-    position:relative;
-    z-index: 10;
-    float:right;
-    
-
-}
-.dots {
-    position:absolute;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    margin-top:720px;
-    left:40%;
-}
-
-#startbtn {
-    font-size: 12px;
-    color:white;
-    margin:-2px 5px;
-}
-#stopbtn {
-    font-size: 12px;
-    color:white;
-    margin:-2px 2px;
-}
-
-.dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.5);
-    margin: 0 3px;
-    cursor: pointer;
-}
-
-.dots .dot1 {
-    background: black;
-}
-.background {
-    width:100%;
-    height:774px;
-    margin:0 auto;
-    position:absolute;
-}
-.aside {
-    z-index:1;
-    width: 8.5%;
-    height: 774px;
-    position: relative;
-}
-#right {
-    float:right;
-}
-#left {
-    float:left;
-}
-.asidebg {
-    cursor: pointer;
-}
-
 /* 상단메뉴첫째줄 */
 .topmenu {
     width:980px;
     margin:auto;
     height: 194px;
+    z-index: 5;
+    position:absolute;
+    left: 50%;
+    margin-left:-490px;
 }
 
 .menuline1 {
@@ -279,6 +186,247 @@ body{
     float:left;
     margin:350px auto;
 }
+
+
+
+/* 슬라이더 구성요소 */
+#bgimage {
+    width:1920px;
+    margin:0 auto;
+    height:774px;
+    /* background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg');
+    background-position: center; */
+    position:relative;
+    overflow:hidden;
+}
+.background{
+    justify-content: center;
+    width:100%;
+    height:774px;
+    margin: 0 auto;
+    overflow:hidden;
+    position:relative;
+    z-index:-0.5
+}
+
+.inbackground{
+    width:100%;
+    height:100%;
+}
+/* .background {
+    width:100%;
+    height:774px;
+    margin:0 auto;
+    position:absolute;
+} */
+.slide{
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.slide1{
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg');
+}
+.slide2{
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/Conjuring/0602/Conjuring_1920774.jpg');
+}
+.slide3{
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/0602/Luca_1920774.jpg');
+}
+.slide4{
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/Ella/Ella_1920774.jpg');
+}
+.slide5{
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/InTheHeights/0528/InTheHeights_1920774.jpg');
+}
+.slide6{
+    background:
+    linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url('https://caching2.lottecinema.co.kr/lotte_image/2021/Truck/0527/Truck_1920774.jpg');
+}
+.slide__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.playbtn {
+    position:absolute;
+    width:1920px;
+    height:774px;
+    z-index: 0
+}
+#playbtn {
+    margin-top:360px;
+    margin-left:935px;
+    cursor: pointer;
+}
+
+/* dots */
+.dotssection {
+    position:relative;
+    justify-content: center;
+}
+.dots {
+    padding: 10px;
+    display:flex;;
+    margin-top:665px;
+    width:120px;
+    position:absolute;
+    z-index: 10;
+    right:460px;
+    margin-right:0px;
+}
+
+#startbtn {
+    font-size: 12px;
+    color:white;
+    margin:-2px 5px;
+    z-index: 5;
+}
+#stopbtn {
+    font-size: 12px;
+    color:white;
+    margin:-2px 2px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.dots .dot1 {
+    background: black;
+}
+
+
+/* 슬라이더 화살표 */
+.aside {
+    z-index:1;
+    width: 8.5%;
+    height: 774px;
+    position: relative;
+}
+#right {
+    float:right;
+}
+#left {
+    float:left;
+}
+.asideright {
+    cursor: pointer;
+}
+.asideleft {
+    cursor: pointer;
+}
+
+
+
 
 
 /* 실시간 잘나가는 영화 */

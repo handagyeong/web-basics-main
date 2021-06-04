@@ -32,48 +32,15 @@
 </head>
 <body onload="showClock()">
     <div class="black">
-    <header>
-        <div id="top" class="ad">
-           <!-- 헤더 광고 섹션 --> 
-           <img id="adimage" src="./image/advertisement.jpg" alt="광고이미지">
-           <span>
-                <img id="close" src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/close_19_wht.png">
-            </span>
-        </div>
-
-        <div id="bgimage" href="#none">
-
-            <div class="background">
-                <aside id="right" class="aside">
-                    <img id="forward" class="asidebg"
-                        src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_31_wht.png">
-                </aside>
-
-                <aside id="left" class="aside">
-                    <img id="back" class="asidebg"
-                        src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_31_wht.png">
-                </aside>
-            </div>
-            <div class="playbtn">
-                <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
-            </div>
-            <div class="dotsbar">
-                <span class="dots">
-                    <div class="dot dot1"></div>
-                    <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
-                    <div class="dot dot4"></div>
-                    <div class="dot dot5"></div>
-                    <div class="dot dot6"></div>
-                    <div class="material-icons" id="startbtn" >
-                        play_arrow
-                        </div>
-                    <div id="stopbtn" class="material-icons">
-                        stop
-                    </div>
+        <header>
+            <!-- 헤더광고 -->
+            <div id="top" class="ad">
+                <!-- 헤더 광고 섹션 --> 
+                <img id="adimage" src="./image/advertisement.jpg" alt="광고이미지">
+                <span>
+                    <img id="close" src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/close_19_wht.png">
                 </span>
             </div>
-
             <div class="topmenu">    
                 <!-- 상단메뉴 첫번째줄 -->
                 <div class="menuline1">
@@ -99,12 +66,11 @@
                         </span>
 
                     </div>
-                    
                     <!-- 로고 ; 클릭시 새로고침 -->
                     <a onclick="location.reload();" class="logo">
-                        <img src="./image/logo.png"></a>
-                        
-                   <!-- 멤버십 고객센터 로그인 -->
+                        <img src="./image/logo.png">
+                    </a>
+                    <!-- 멤버십 고객센터 로그인 -->
                     <div class="line1_side">
                         <span class="btn_side">
                             멤버십
@@ -117,40 +83,92 @@
                         </span>
                     </div>
                 </div>
-                    
                 <!-- 구분선 -->
                 <hr id="hre">
-                
                 <!-- 메뉴2번째줄; 예매~바로예매 -->
                 <div id="menuline2" class="menuline2">
                     <div class="menuline2width">
-                    <div class="line2_main">
-                        <ul class="main">  
-                            <div id="main_title1" class="main_title" >예매</div>
-                            <div id="main_title2" class="main_title" >영화</div>
-                            <div id="main_title3" class="main_title" >영화관</div>
-                            <div id="main_title4" class="main_title" >이벤트</div>
-                            <div id="main_title5" class="main_titleend" >스토어</div>
-                        </ul></div>
+                        <div class="line2_main">
+                            <ul class="main">  
+                                <div id="main_title1" class="main_title" >예매</div>
+                                <div id="main_title2" class="main_title" >영화</div>
+                                <div id="main_title3" class="main_title" >영화관</div>
+                                <div id="main_title4" class="main_title" >이벤트</div>
+                                <div id="main_title5" class="main_titleend" >스토어</div>
+                            </ul>
+                        </div>
                         <div class="line2_side">
                             <span class="btn_side">
                                 <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_my_wht.png">&nbsp;회원가입
-                                </span>
+                            </span>
                             <span class="btn_side">
                                 <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_reserve_wht.png">&nbsp;바로예매
-                                </span>
+                            </span>
                             <span class="btn_side">
                                 <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_all_wht.png"> 
-                                </span>
-    
+                            </span>
+
                         </div>
                     </div>
 
+                </div>
+            </div>
+            
+            <div id="bgimage" >
+                <div class="background">
+                    <div class="inbackground">
+                        <div class="dotssection">
+                            <div class="dots">
+                                <div class="dot dot1"></div>
+                                <div class="dot dot2"></div>
+                                <div class="dot dot3"></div>
+                                <div class="dot dot4"></div>
+                                <div class="dot dot5"></div>
+                                <div class="dot dot6"></div>
+                                <div class="material-icons" id="startbtn" >
+                                    play_arrow
+                                    </div>
+                                <div id="stopbtn" class="material-icons">
+                                    stop
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right" class="aside">
+                            <img id="forward" class="asideright"
+                                src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_31_wht.png">
+                        </div>
+                        <div id="left" class="aside">
+                            <img id="back" class="asideleft"
+                                src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_31_wht.png">
+                        </div>
+                        <div class="playbtn">
+                            <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
+                        </div>
+                        <div class="slide slide1">
+                            <div class="slide__content"></div>
+                        </div>
+                        <div class="slide slide2">
+                            <div class="slide__content"></div>
+                        </div>
+                        <div class="slide slide3">
+                            <div class="slide__content"></div>
+                        </div>
+                        <div class="slide slide4">
+                            <div class="slide__content"></div>
+                        </div>
+                        <div class="slide slide5">
+                            <div class="slide__content"></div>
+                        </div>
+                        <div class="slide slide6">
+                            <div class="slide__content"></div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </header>
-        </div>
+    </div>
     
 
 
