@@ -2,6 +2,7 @@ body{
     height: auto;
     font-family: 'Noto Sans KR', sans-serif;
     position:relative; 
+    z-index:0;
 }
 .header {
     position:absolute;
@@ -14,9 +15,11 @@ body{
     margin:0px 10px 5px 1px;  
     color:black;
     float:right;
+    z-index: 219;
 }
 .black {
      background-color:black;
+     z-index: -15;
     position: relative;
      
 }
@@ -52,7 +55,7 @@ body{
     width:980px;
     margin:auto;
     height: 194px;
-    z-index: 5;
+    z-index: 16;
     position:absolute;
     left: 50%;
     margin-left:-490px;
@@ -90,6 +93,7 @@ body{
     margin: auto;
     margin-bottom: 0px;
     cursor: pointer;
+    z-index: 20;
 }
 
 #hre {
@@ -125,7 +129,7 @@ body{
     top:0px;
     left:0px;
     width:100%;
-    z-index: 2;
+    z-index: 99;
     
 }
 #menuline2.active .menuline2width {
@@ -194,52 +198,23 @@ body{
     width:1920px;
     margin:0 auto;
     height:774px;
-    /* background:
-    linear-gradient(
-        to top,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0.75) 5%,
-        rgba(0, 0, 0, 0.5) 10%,
-        rgba(0, 0, 0, 0.25) 15%,
-        rgba(0, 0, 0, 0) 20%,
-
-        rgba(0, 0, 0, 0) 80%,
-        rgba(0, 0, 0, 0.25) 85%,
-        rgba(0, 0, 0, 0.5) 90%,
-        rgba(0, 0, 0, 0.75) 95%,
-        rgba(0, 0, 0, 1) 100%
-      ),
-      url('https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg');
-    background-position: center; */
     position:relative;
     overflow:hidden;
-}
-.background{
-    justify-content: center;
-    width:100%;
-    height:774px;
-    margin: 0 auto;
-    overflow:hidden;
-    position:relative;
-    z-index:-0.5
 }
 
 .inbackground{
     width:100%;
-    height:100%;
-}
-/* .background {
-    width:100%;
     height:774px;
-    margin:0 auto;
-    position:absolute;
-} */
+    z-index: 2;
+} 
+
 .slide{
     background-size:100%;
+    height:774px;
     background-position:center;
     background-repeat:no-repeat;
 }
-.slide1{
+/* .slide1{
     background:
     linear-gradient(
         to top,
@@ -348,83 +323,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.playbtn {
-    position:absolute;
-    width:1920px;
-    height:774px;
-    z-index: 0
-}
-#playbtn {
-    margin-top:360px;
-    margin-left:935px;
-    cursor: pointer;
-}
-
-/* dots */
-.dotssection {
-    position:relative;
-    justify-content: center;
-}
-.dots {
-    padding: 10px;
-    display:flex;;
-    margin-top:665px;
-    width:120px;
-    position:absolute;
-    z-index: 10;
-    right:460px;
-    margin-right:0px;
-}
-
-#startbtn {
-    font-size: 12px;
-    color:white;
-    margin:-2px 5px;
-    z-index: 5;
-}
-#stopbtn {
-    font-size: 12px;
-    color:white;
-    margin:-2px 2px;
-}
-
-.dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.5);
-    margin: 0 3px;
-    cursor: pointer;
-}
-
-.dots .dot1 {
-    background: black;
-}
-
-
-/* 슬라이더 화살표 */
-.aside {
-    z-index:1;
-    width: 8.5%;
-    height: 774px;
-    position: relative;
-}
-#right {
-    float:right;
-}
-#left {
-    float:left;
-}
-.asideright {
-    cursor: pointer;
-}
-.asideleft {
-    cursor: pointer;
-}
-
+} */
 
 
 
@@ -708,25 +607,30 @@ margin-right:10px;
 }
     /* Swiper 슬라이더 */
 
-    .swiper-container {
+    .swiper3 {
         width: 840px;
         height: 30px;
         overflow: hidden;
         /* display: flex; */
-        margin-left:20px;
+        /* margin-left:20px; */
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
+
     }
     
-    .swiper-slide {
+    .swiper3-slide {
         background: #fff;
         display: block;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
-        padding-top:1.5px;
+        /* padding-top:1.5px; */
         /* object-fit: cover; */
+        
     }
     
+    .swiper3-wrapper {
+        margin-left:0px;
+    }
 
 #dp {
     width: 980px;
@@ -849,4 +753,253 @@ margin-right:10px;
 }
 .bottomitem {
     margin:24px 3px 24px 3px;
+}
+
+
+/* 메인스와이퍼 */
+.swiper1  {
+    width: 1920px;
+    height: 774px;
+    z-index: -0.5;
+    position:absolute;
+  }
+.mainswiper-rapper {
+    height:774px;
+    position: absolute;
+}
+  .swiper-slide {
+    width: 100%;
+    height: 774px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide1 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg");
+  }
+
+  .slide2 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/Conjuring/0602/Conjuring_1920774.jpg");
+  }
+  .slide3 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/0602/Luca_1920774.jpg");
+  }
+
+  .slide4 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/Ella/Ella_1920774.jpg");
+  }
+
+  .slide5 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/InTheHeights/0528/InTheHeights_1920774.jpg");
+  }
+
+  .slide6 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.75) 5%,
+        rgba(0, 0, 0, 0.5) 10%,
+        rgba(0, 0, 0, 0.25) 15%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.25) 85%,
+        rgba(0, 0, 0, 0.5) 90%,
+        rgba(0, 0, 0, 0.75) 95%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/Truck/0527/Truck_1920774.jpg");
+  }
+
+
+
+  /* 슬라이더 화살표 */
+/* .aside {
+    z-index:20;
+    width: 8.5%;
+    height: 774px;
+    position: absolute;
+    top:0;
+    cursor:pointer;
+} */
+.swiper-button-next {
+    background: url("https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_31_wht.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-right:40px;
+    z-index: 21;
+    cursor: pointer;
+  }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev {
+    background: url("https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_31_wht.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left:40px;
+    z-index: 21;
+    cursor: pointer;
+
+}
+.swiper-pagination {
+    height:100%;
+    top:0px;
+    margin-top:680px;
+    width:956px; 
+    margin-left:0px;   
+}
+.swiper-pagination-bullets{
+    width:956px;
+    margin-right:5px;
+}
+
+.swiper-pagination-bullet {
+    background:black;
+    margin-right:5px;
+    cursor:pointer;
+    z-index: 20;
+
+}
+/* .swiper-pagination-bullet.active {
+    color:black 100%;
+} */
+
+.swiper-button-next {
+    cursor: pointer;
+    z-index: 20;
+}
+
+.swiper-dotbar {
+    width: 980px;
+    position:absolute;
+    z-index: -1;
+    height:774px;
+    z-index:15;
+    /* justify:center; */
+    left:50%;
+    margin-left:-490px;
+    top:0;
+    display:flex;
+    
+}
+
+
+
+#startbtn {
+    font-size: 12px;
+    color:white;
+    opacity: 1;
+    margin: -2px 5px;
+    z-index: 20;
+    cursor:pointer;
+    margin-top:680px;
+}
+
+#startbtn.active {
+    opacity:0.5;
+}
+#stopbtn {
+    font-size: 12px;
+    color:white;
+    cursor:pointer;
+    opacity:0.5;
+    z-index: 20;
+    margin:-2px 2px;
+    margin-top:680px;
+
+}
+
+#stopbtn.active {
+    opacity:1;
+}
+
+
+
+#playbtn {
+    position:absolute;
+    margin-top:360px;
+    margin-left:935px;
+    z-index: 20;
+    cursor: pointer;
+    /* float:right; */
+
 }

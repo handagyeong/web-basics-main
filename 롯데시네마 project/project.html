@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>롯데시네마</title>
-        <!-- 각 브라우저의 기본 스타일을 초기화 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-        <!-- 파비콘 설정 -->
+    <!-- 각 브라우저의 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 파비콘 설정 -->
     <link href="https://www.lottecinema.co.kr/NLCHS/favicon.ico?v=1" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- 구글 폰트: main.css보다 먼저 불러올 수 있도록 한다 -->
@@ -19,9 +19,10 @@
     <script defer src="./js/main.js"></script>
     <!-- 스크롤바 기능 이용 소스 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <!-- 수직슬라이더 -->
+    <!-- swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <!-- <link href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
 
     <!-- a 태그 색 및 밑줄 없애기 -->
     <style type="text/css">
@@ -31,6 +32,7 @@
        </style>
 </head>
 <body onload="showClock()">
+
     <div class="black">
         <header>
             <!-- 헤더광고 -->
@@ -118,50 +120,36 @@
                 <div class="background">
                     <div class="inbackground">
                         <div class="dotssection">
-                            <div class="dots">
-                                <div class="dot dot1"></div>
-                                <div class="dot dot2"></div>
-                                <div class="dot dot3"></div>
-                                <div class="dot dot4"></div>
-                                <div class="dot dot5"></div>
-                                <div class="dot dot6"></div>
-                                <div class="material-icons" id="startbtn" >
+                            <!-- 스와이퍼 도트바 -->
+                            <div class="swiper-dotbar">
+                                <div class="material-icons swiper-button-start" id="startbtn">
                                     play_arrow
                                     </div>
-                                <div id="stopbtn" class="material-icons">
+                                <div id="stopbtn" class="material-icons swiper-button-stop">
                                     stop
-                                </div>
+                                </div>  
+                                <dic class="swiper-pagination">
+                                </dic>
+
                             </div>
                         </div>
-                        <div id="right" class="aside">
-                            <img id="forward" class="asideright"
-                                src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_rg_31_wht.png">
+
+                        <!-- Swiper -->
+                        <div class="swiper-container swiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper1-slide slide1"></div>
+                                <div class="swiper-slide swiper1-slide slide2"></div>
+                                <div class="swiper-slide swiper1-slide slide3"></div>
+                                <div class="swiper-slide swiper1-slide slide4"></div>
+                                <div class="swiper-slide swiper1-slide slide5"></div>
+                                <div class="swiper-slide swiper1-slide slide6"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>                                                        
+                                <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
+                            
                         </div>
-                        <div id="left" class="aside">
-                            <img id="back" class="asideleft"
-                                src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/arr_lf_31_wht.png">
-                        </div>
-                        <div class="playbtn">
-                            <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
-                        </div>
-                        <div class="slide slide1">
-                            <div class="slide__content"></div>
-                        </div>
-                        <div class="slide slide2">
-                            <div class="slide__content"></div>
-                        </div>
-                        <div class="slide slide3">
-                            <div class="slide__content"></div>
-                        </div>
-                        <div class="slide slide4">
-                            <div class="slide__content"></div>
-                        </div>
-                        <div class="slide slide5">
-                            <div class="slide__content"></div>
-                        </div>
-                        <div class="slide slide6">
-                            <div class="slide__content"></div>
-                        </div>
+
                         
                         
                     </div>
@@ -395,11 +383,11 @@
                 공지사항
             </div>
         <!-- 공지사항 swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper3">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">롯데시네마 영구VIP 서비스 종료 안내</div>
-                <div class="swiper-slide">KT멤버십 영화예매 적립 서비스 안내</div>
-                <div class="swiper-slide">마스크 착용 의무화 행정명령 시행 안내</div>
+                <div class="swiper-slide swiper3-slide">롯데시네마 영구VIP 서비스 종료 안내</div>
+                <div class="swiper-slide swiper3-slide">KT멤버십 영화예매 적립 서비스 안내</div>
+                <div class="swiper-slide swiper3-slide">마스크 착용 의무화 행정명령 시행 안내</div>
             </div>
         </div>
             <div id="noticemore" class="material-icons">

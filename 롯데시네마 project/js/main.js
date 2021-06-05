@@ -22,33 +22,44 @@ $(window).on('scroll',function(){
     else{ 
         $('#menuline2').removeClass('active'); } });
 
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
+// 공지 수직 슬라이드
+var swiper3 = new Swiper('.swiper3', {
     direction: 'vertical',
     autoplay: true,
     loop: true,
-    
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    
-    
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
     });
 
-    // var swiper = new Swiper(".mainSwiper", {
-    //     cssMode: true,
-    //     navigation: {
-    //       nextEl: ".swiper-button-next",
-    //       prevEl: ".swiper-button-prev"
-    //     },
-    //     pagination: {
-    //       el: ".swiper-pagination"
-    //     },
-    //     mousewheel: true,
-    //     keyboard: true
-    //   });
+
+// 메인슬라이드
+const swiper1 = new Swiper(".swiper1", {
+    cssMode: true,
+    direction: 'horizontal',
+    autoplay: {
+        delay:2500,
+        disableOnInteraction:false,
+    },
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    speed:2000,
+    // mousewheel: true,
+    // keyboard: true
+    });
+
+$(".swiper-button-stop").click(function(){
+    swiper1.autoplay.stop();
+    $('#stopbtn').addClass('active');
+    $('#startbtn').addClass('active');
+    });
+
+$(".swiper-button-start").click(function(){
+    swiper1.autoplay.play();
+    $('#stopbtn').removeClass('active');
+    $('#startbtn').removeClass('active');
+    });
