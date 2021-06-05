@@ -27,6 +27,7 @@ var swiper3 = new Swiper('.swiper3', {
     direction: 'vertical',
     autoplay: true,
     loop: true,
+    speed:500,
     });
 
 
@@ -48,8 +49,12 @@ const swiper1 = new Swiper(".swiper1", {
         clickable: true,
     },
     speed:2000,
-    // mousewheel: true,
-    // keyboard: true
+    mousewheel: {
+        invert:true
+    },
+    keyboard: {
+        invert:true
+    },
     });
 
 $(".swiper-button-stop").click(function(){
@@ -62,4 +67,14 @@ $(".swiper-button-start").click(function(){
     swiper1.autoplay.play();
     $('#stopbtn').removeClass('active');
     $('#startbtn').removeClass('active');
+    });
+
+
+var swiper = new Swiper(".swiper2", {
+    slidesPerView: 5,
+    // spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
     });

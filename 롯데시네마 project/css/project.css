@@ -604,6 +604,7 @@ margin-right:10px;
     padding-top: 2px;
     border-width: 1px;
     width:64px;
+    z-index: 2;
 }
     /* Swiper 슬라이더 */
 
@@ -611,24 +612,23 @@ margin-right:10px;
         width: 840px;
         height: 30px;
         overflow: hidden;
-        /* display: flex; */
-        /* margin-left:20px; */
+        left:-300px;
+        z-index: -2;
+        float:left;
+        margin-left:20px;
         align-items: center;
-        /* justify-content: center; */
 
     }
     
     .swiper3-slide {
         background: #fff;
-        display: block;
-        /* justify-content: center; */
         align-items: center;
-        /* padding-top:1.5px; */
-        /* object-fit: cover; */
+        float:left;
         
     }
     
     .swiper3-wrapper {
+        float:left;
         margin-left:0px;
     }
 
@@ -1019,4 +1019,27 @@ margin-right:10px;
     /* float:right; */
   
 
+}
+
+
+
+
+
+
+/* 인기영화 슬라이드 */
+
+.swiper2{
+    width:980px;
+    margin-top:-80px;
+}
+.swiper-wrapper2 {
+    width:980px;
+    color:white;
+
+}
+.prevbtn2 {
+    margin-left:420px;
+}
+.nextbtn2 {
+    margin-right:420px;
 }
