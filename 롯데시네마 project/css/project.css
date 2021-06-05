@@ -122,7 +122,7 @@ body{
 }
 /* 스크롤 내렸을때
   */
-#menuline2.active {
+#menuline2.active0 {
     color:black;
     background-color: white; 
     position:fixed;
@@ -132,20 +132,20 @@ body{
     z-index: 99;
     
 }
-.main_sub.active{
+.main_sub.active0{
     background-color: white;
 }
-#menuline2.active .menuline2width {
+#menuline2.active0 .menuline2width {
     left:50%;
     margin-left:-490px;
 }
-#menuline2.active .btn_side {
+#menuline2.active0 .btn_side {
     color:black;
 }
-#menuline2.active img {
+#menuline2.active0 img {
    filter:invert(100%);
 }
-#menuline2.active ul {
+#menuline2.active0 ul {
     color:black;
 }
 
@@ -540,8 +540,15 @@ body{
     margin: 62px auto;;
 }
 
-
-
+#specialmore {
+    float:right;
+}
+#eventmore{
+    float:right;
+}
+#pressmore {
+    float:right;
+}
 
 #sp {
     width: 980px;

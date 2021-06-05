@@ -17,11 +17,11 @@ function showClock() {
 }
 $(window).on('scroll',function(){ 
     if($(window).scrollTop()){
-         $('#menuline2').addClass('active');
-         $('.main_sub').addClass('active');
+         $('#menuline2').addClass('active0');
+         $('.main_sub').addClass('active0');
     }
     else{ 
-        $('#menuline2').removeClass('active'); } });
+        $('#menuline2').removeClass('active0'); } });
 
 // 공지 수직 슬라이드
 var swiper3 = new Swiper('.swiper3', {
