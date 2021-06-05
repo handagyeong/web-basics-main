@@ -151,6 +151,7 @@ body{
     width:980px;
     font-size:20px;
     position: absolute;
+
 }
 
 .main {
@@ -160,16 +161,76 @@ body{
     margin-top:8px;
 }
 .main_title {
-    margin: 5px 0px 5px 30px;
+    /* margin: 0px 0px 5px 30px; */
     font-size:14px;
     border-right: 1px solid #707070;
-    padding-right:30px;
-    border-width: 2px;
+    padding-right:25px;
+    padding-left:25px;
+    padding-bottom:10px;
+    cursor: pointer;
 }
 .main_titleend {
-    margin: 5px 30px 5px 30px;
+    /* margin: 0px 0px 5px 30px; */
+    padding-right:25px;
+    padding-left:25px;
+    padding-bottom:10px;
     font-size:14px;
+    cursor:pointer;
 }
+
+/* 메인 JS 효과 서브메뉴 */
+.main_sub {
+    position: absolute;
+    width: 1920px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5px 5px;
+    background: black;
+    left:50%;
+    margin-left:-960px;
+    opacity: 0.5;
+    font-size:12px;
+    
+}
+.main_submenu {
+    padding-right:7px;
+    padding-left:7px;
+    cursor:pointer;
+}
+
+
+
+/* 메뉴2 호버효과를 위한 css */
+.main_title:hover {
+    border-bottom: 1px solid red;
+    border-width: 3px;
+    border-right: 1px solid #707070;
+    padding-bottom:8px;
+}
+.main_titleend:hover {
+    border-bottom: 1px solid red;
+    border-width: 3px;
+    
+    padding-bottom:8px;
+}
+.main_sub {
+    visibility:hidden;
+}
+
+/* .main_sub2 {
+    visibility:hidden;
+}
+.main_sub3 {
+    visibility:hidden;
+}
+.main_sub4 {
+    visibility:hidden;
+}
+.main_sub5 {
+    visibility:hidden;
+} */
 
 
 .line2_side {

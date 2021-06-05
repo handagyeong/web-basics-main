@@ -78,3 +78,57 @@ var swiper = new Swiper(".swiper2", {
         prevEl: ".swiper-button-prev"
     }
     });
+
+//     // 호버 j쿼리
+// $(document).ready(function () {
+//     $('.main_title1').hover(function(){
+//         $('.main_sub1').addClass('active');
+//     }, function() {
+//         $('main_sub1').removeClass('active');
+//     });
+// });
+
+$(function(){
+    $('.main_title1').mouseenter(function(){
+      $('.main_sub1').css('visibility','visible');
+    });
+    $('.main_title1').mouseleave(function(){
+      $('.main_sub1').css('visibility','hidden');
+    });
+});
+
+$(function(){
+    $('.main_title2').mouseenter(function(){
+      $('.main_sub2').css('visibility','visible');
+    });
+    $('.main_title2').mouseleave(function(){
+      $('.main_sub2').css('visibility','hidden');
+    });
+});
+
+$(function(){
+    $('.main_title3').mouseenter(function(){
+      $('.main_sub3').css('visibility','visible');
+    });
+    $('.main_title3').mouseleave(function(){
+      $('.main_sub3').css('visibility','hidden');
+    });
+});
+
+$(function(){
+    $('.main_title4').mouseenter(function(){
+      $('.main_sub4').css('visibility','visible');
+    });
+    $('.main_title4').mouseleave(function(){
+      $('.main_sub4').css('visibility','hidden');
+    });
+});
+
+$(function(){
+    $('.main_title5').mouseenter(function(){
+      $('.main_sub5').css('visibility','visible');
+    });
+    $('.main_title5').mouseleave(function(){
+      $('.main_sub5').css('visibility','hidden');
+    });
+});
