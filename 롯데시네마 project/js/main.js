@@ -18,6 +18,7 @@ function showClock() {
 $(window).on('scroll',function(){ 
     if($(window).scrollTop()){
          $('#menuline2').addClass('active');
+         $('.main_sub').addClass('active');
     }
     else{ 
         $('#menuline2').removeClass('active'); } });
@@ -74,19 +75,11 @@ var swiper = new Swiper(".swiper2", {
     slidesPerView: 5,
     // spaceBetween: 10,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".nextbtn2",
+        prevEl: ".prevbtn2"
     }
     });
 
-//     // 호버 j쿼리
-// $(document).ready(function () {
-//     $('.main_title1').hover(function(){
-//         $('.main_sub1').addClass('active');
-//     }, function() {
-//         $('main_sub1').removeClass('active');
-//     });
-// });
 
 $(function(){
     $('.main_title1').mouseenter(function(){
