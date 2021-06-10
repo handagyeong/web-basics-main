@@ -135,3 +135,168 @@ $(function(){
 $(document).on("click","#close",function(){
   $('.ad').hide();
 });
+
+
+// 인기영화 슬라이드: 호버->예매하기&상세정보
+
+$(function(){
+  $('#poster01').mouseenter(function(){
+    $('#posterhover01').css('visibility','visible');
+  });
+  $('#poster01').mouseleave(function(){
+    $('#posterhover01').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster02').mouseenter(function(){
+    $('#posterhover02').css('visibility','visible');
+  });
+  $('#poster02').mouseleave(function(){
+    $('#posterhover02').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster03').mouseenter(function(){
+    $('#posterhover03').css('visibility','visible');
+  });
+  $('#poster03').mouseleave(function(){
+    $('#posterhover03').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster04').mouseenter(function(){
+    $('#posterhover04').css('visibility','visible');
+  });
+  $('#poster04').mouseleave(function(){
+    $('#posterhover04').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster06').mouseenter(function(){
+    $('#posterhover06').css('visibility','visible');
+  });
+  $('#poster06').mouseleave(function(){
+    $('#posterhover06').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster07').mouseenter(function(){
+    $('#posterhover07').css('visibility','visible');
+  });
+  $('#poster07').mouseleave(function(){
+    $('#posterhover07').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster08').mouseenter(function(){
+    $('#posterhover08').css('visibility','visible');
+  });
+  $('#poster08').mouseleave(function(){
+    $('#posterhover08').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster09').mouseenter(function(){
+    $('#posterhover09').css('visibility','visible');
+  });
+  $('#poster09').mouseleave(function(){
+    $('#posterhover09').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster10').mouseenter(function(){
+    $('#posterhover10').css('visibility','visible');
+  });
+  $('#poster10').mouseleave(function(){
+    $('#posterhover10').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster11').mouseenter(function(){
+    $('#posterhover11').css('visibility','visible');
+  });
+  $('#poster11').mouseleave(function(){
+    $('#posterhover11').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster12').mouseenter(function(){
+    $('#posterhover12').css('visibility','visible');
+  });
+  $('#poster12').mouseleave(function(){
+    $('#posterhover12').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster13').mouseenter(function(){
+    $('#posterhover13').css('visibility','visible');
+  });
+  $('#poster13').mouseleave(function(){
+    $('#posterhover13').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster14').mouseenter(function(){
+    $('#posterhover14').css('visibility','visible');
+  });
+  $('#poster14').mouseleave(function(){
+    $('#posterhover14').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster15').mouseenter(function(){
+    $('#posterhover15').css('visibility','visible');
+  });
+  $('#poster15').mouseleave(function(){
+    $('#posterhover15').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster16').mouseenter(function(){
+    $('#posterhover16').css('visibility','visible');
+  });
+  $('#poster16').mouseleave(function(){
+    $('#posterhover16').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster17').mouseenter(function(){
+    $('#posterhover17').css('visibility','visible');
+  });
+  $('#poster17').mouseleave(function(){
+    $('#posterhover17').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster18').mouseenter(function(){
+    $('#posterhover18').css('visibility','visible');
+  });
+  $('#poster18').mouseleave(function(){
+    $('#posterhover18').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster19').mouseenter(function(){
+    $('#posterhover19').css('visibility','visible');
+  });
+  $('#poster19').mouseleave(function(){
+    $('#posterhover19').css('visibility','hidden');
+  });
+});$(function(){
+  $('#poster20').mouseenter(function(){
+    $('#posterhover20').css('visibility','visible');
+  });
+  $('#poster20').mouseleave(function(){
+    $('#posterhover20').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster21').mouseenter(function(){
+    $('#posterhover21').css('visibility','visible');
+  });
+  $('#poster21').mouseleave(function(){
+    $('#posterhover21').css('visibility','hidden');
+  });
+});
+$(function(){
+  $('#poster22').mouseenter(function(){
+    $('#posterhover22').css('visibility','visible');
+  });
+  $('#poster22').mouseleave(function(){
+    $('#posterhover22').css('visibility','hidden');
+  });
+});

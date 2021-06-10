@@ -247,6 +247,16 @@ body{
 
 
 /* 메인 슬라이더 */
+#mainplaybtn {
+    left:50%;
+    margin-left:-25px;
+    z-index: 99;
+    position: absolute;
+    top:50%;
+    margin-top:-25px;
+    cursor:pointer;
+
+}
 #bgimage {
     width:1920px;
     margin:0 auto;
@@ -518,13 +528,59 @@ body{
     margin-left:935px;
     z-index: 20;
     cursor: pointer;
-    /* float:right; */
-  
-
 }
 
 
+
+
+
 /* 인기영화 슬라이드 */
+
+    .posterz{
+        z-index: 0;
+    }
+    .star {
+        size: 11px;
+
+    }
+    /* 호버 히든이미지 */
+    .posterhover {
+        width:184px;
+        height:262.84px;
+        position: absolute;
+        margin-top:-262.84px;
+        visibility: hidden;
+        z-index: 30;
+        color:white;
+        background-color:rgba(0, 0, 0, 0.7);
+
+        
+    }
+    .intext {
+        /* width:150px;
+        height:30px; */
+        border-radius: 5px;
+        border: 1.5px solid white;
+        font-size: 14px;
+        margin-left:15px;
+        margin-right:15px;
+        padding-left:47px;
+        padding-top:6px;
+        padding-right:47px;
+        padding-bottom:6px;
+        cursor:pointer;
+    }
+
+    .intext.intext01 {
+        margin-top:90px;
+    }
+
+    .intext.intext02 {
+        margin-top:11.42px;
+    }
+
+
+
 .time {
     display:flex;
     color:white;
@@ -639,10 +695,17 @@ body{
     margin-bottom:6px;
     
 }
+.movtitle.title {
+    width:188px;
+}
 .movline2 {
     display: flex;
     justify-content: center;
     font-size: 11px;
+    height:11px;
+    margin-top:10px;
+    padding-top:5px;
+    
 }
 .movpercent {
     margin-right:3px;
@@ -657,6 +720,8 @@ body{
     margin-right:3px;
     border-left: 1px solid white;
     margin-left:3px;
+    padding-left: 5px;
+    padding-right:5px;
 }
 .btn_heart_rnd {
     width: 16px;
@@ -667,6 +732,8 @@ body{
     border:none;
     cursor: pointer;
     margin-left:3px;
+    margin-top: -2px;;
+    
 }
 .movpopular {
     width:341px;
