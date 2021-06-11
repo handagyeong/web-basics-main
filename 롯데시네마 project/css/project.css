@@ -28,14 +28,14 @@ body{
     margin: auto;
     width:100%;
     height:500px;
-    background-color: #abc9e5;
+    background-color: #68c6df;
     z-index: 3;
 }
 
 .ad{
     margin:0 auto;
     position:relative;
-    background-color: #abc9e5;
+    background-color: #68c6df;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -51,7 +51,7 @@ body{
     width:20px;
     height:20px;
     background-image: url("https://www.lottecinema.co.kr/NLCHS/Content/images/icon/close_19_wht.png");
-    background-color:#abc9e5;
+    background-color:#68c6df;
     border:none;
 }
 
@@ -312,7 +312,7 @@ body{
         rgba(0, 0, 0, 0.75) 95%,
         rgba(0, 0, 0, 1) 100%
       ),
-      url("https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg");
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/0602/Luca_1920774.jpg");
   }
 
   .slide2 {
@@ -345,7 +345,7 @@ body{
         rgba(0, 0, 0, 0.75) 95%,
         rgba(0, 0, 0, 1) 100%
       ),
-      url("https://caching2.lottecinema.co.kr/lotte_image/2021/Luca/0602/Luca_1920774.jpg");
+      url("https://caching2.lottecinema.co.kr/lotte_image/2021/RainStory/0407/RainStory_1920774.jpg");
   }
 
   .slide4 {
