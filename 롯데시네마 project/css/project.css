@@ -48,6 +48,11 @@ body{
     position: relative;
     cursor:pointer;
     margin-top:30.5px;
+    width:20px;
+    height:20px;
+    background-image: url("https://www.lottecinema.co.kr/NLCHS/Content/images/icon/close_19_wht.png");
+    background-color:#abc9e5;
+    border:none;
 }
 
 /* 상단메뉴첫째줄 */
@@ -197,7 +202,7 @@ body{
     background: black;
     left:50%;
     margin-left:-960px;
-    opacity: 0.5;
+    opacity: 0.7;
     font-size:12px;
     visibility:hidden;
     
@@ -215,12 +220,11 @@ body{
     border-bottom: 1px solid red;
     border-width: 3px;
     border-right: 1px solid #707070;
-    /* padding-bottom:8px; */
+    padding-bottom:8px;
 }
 .main_titleend:hover {
     border-bottom: 1px solid red;
     border-width: 3px;
-    
     padding-bottom:8px;
 }
 
@@ -247,29 +251,17 @@ body{
 
 
 /* 메인 슬라이더 */
-#mainplaybtn {
-    left:50%;
-    margin-left:-25px;
-    z-index: 99;
-    position: absolute;
-    top:50%;
-    margin-top:-25px;
-    cursor:pointer;
 
-}
-#bgimage {
+#mainslider {
     width:1920px;
+    height:774px;
+    z-index: 2;
     margin:0 auto;
     height:774px;
     position:relative;
     overflow:hidden;
 }
 
-.inbackground{
-    width:100%;
-    height:774px;
-    z-index: 2;
-} 
 
 .slide{
     background-size:100%;
@@ -432,6 +424,7 @@ body{
     cursor: pointer;
 
 }
+/* 메인슬라이더-도트바 */
 .swiper-pagination {
     height:100%;
     top:0px;
@@ -442,9 +435,7 @@ body{
 .swiper-pagination-bullets{
     width:956px;
     margin-right:5px;
-    
 }
-
 .swiper-pagination-bullet {
     margin-right:5px;
     cursor:pointer;
@@ -456,7 +447,6 @@ body{
     float:left;
     position:relative;
 }
-
 .swiper-button-next {
     cursor: pointer;
     z-index: 20;
@@ -467,15 +457,11 @@ body{
     z-index: -1;
     height:100px;
     z-index:15;
-    /* justify:center; */
     left:50%;
     margin-left:-490px;
     top:0;
     display:flex;
-    
-    
 }
-
 .swiper-pagination-bullet-active {
     margin-right:5px;
     cursor:pointer;
@@ -487,7 +473,7 @@ body{
 }
   
 
-
+/* 메인슬라이더 재생/정지 */
 #startbtn {
     font-size: 12px;
     color:white;
@@ -499,7 +485,6 @@ body{
     margin-top:680px;
     margin-left:940px;
 }
-
 #startbtn.active {
     opacity:0.5
 }
@@ -513,117 +498,26 @@ body{
     margin-top:680px;
     position: relative;
     margin-left:1px;
-
 }
-
 #stopbtn.active {
     opacity:1;
 }
 
-
-
-#playbtn {
-    position:absolute;
-    margin-top:360px;
-    margin-left:935px;
-    z-index: 20;
-    cursor: pointer;
+/* 메인슬라이더-중앙재생버튼 */
+#mainplaybtn {
+    left:50%;
+    margin-left:-25px;
+    z-index: 99;
+    position: absolute;
+    top:50%;
+    margin-top:-25px;
+    cursor:pointer;
 }
 
 
 
 
-
-/* 인기영화 슬라이드 */
-
-    .posterz{
-        z-index: 0;
-    }
-    .star {
-        size: 11px;
-
-    }
-    /* 호버 히든이미지 */
-    .posterhover {
-        width:184px;
-        height:262.84px;
-        position: absolute;
-        margin-top:-262.84px;
-        visibility: hidden;
-        z-index: 30;
-        color:white;
-        background-color:rgba(0, 0, 0, 0.7);
-
-        
-    }
-    .intext {
-        /* width:150px;
-        height:30px; */
-        border-radius: 5px;
-        border: 1.5px solid white;
-        font-size: 14px;
-        margin-left:15px;
-        margin-right:15px;
-        padding-left:47px;
-        padding-top:6px;
-        padding-right:47px;
-        padding-bottom:6px;
-        cursor:pointer;
-    }
-
-    .intext.intext01 {
-        margin-top:90px;
-    }
-
-    .intext.intext02 {
-        margin-top:11.42px;
-    }
-
-
-
-.time {
-    display:flex;
-    color:white;
-    }
-.clockimg {
-    margin-right:5px;
-
-}
-.posterz {
-    margin-top:-70px;
-}
-.swiper2{
-    width:980px;
-    margin-top:0px;
-    height:400px;
-    
-}
-.swiper-wrapper2 {
-    width:980px;
-    color:white;
-
-}
-.prevbtn2 {
-    margin-left:420px;
-}
-.nextbtn2 {
-    margin-right:420px;
-}
-
-    /* 화살표 */
-    .movpopular {
-        margin-top:-20px ;
-    }
-    .popularmovside {
-        cursor: pointer;
-    }
-    #movpre {
-        margin-right:5px;
-    }
-    #movnext {
-        margin-left:5px;
-    }
-
+/* 인기영화슬라이드 */
 .bestmovie {
     width:100%;
     height:385px;
@@ -634,163 +528,180 @@ body{
     background:black;
 }
 
-.popular {
-    background:black;
-    height:385px;
-    width:980px;
-    color:#ffffff;
-    margin:0 ;
-}
-.time {
-    float:right;
-    position:relative;
-    font-size: 11px;
-}
-    /* 영화포스터 */
-.posters {
+    /* 실시간 표시 */
+    .time {
         display:flex;
+        color:white;
+        float:right;
+        position:relative;
+        font-size: 11px;
+    }
+    .clockimg {
+        margin-right:5px;
+    }
+
+    /* 슬라이드 */
+    .swiper2{
         width:980px;
+        margin-top:0px;
+        height:400px;
+    }
+    .swiper-wrapper2 {
+        width:980px;
+        color:white;
+    }
+    .poster {
+        width:184px;
         height:262.85px;
-        margin:0 auto;
-}
-.movietext {
-    margin-top:6px;
-}
-.poster {
-    width:184px;
-    height:262.85px;
-    margin-left:6px;
-    margin-right:6px;
-    margin-top:30px;
-}
+        margin-left:6px;
+        margin-right:6px;
+        margin-top:30px;
+    }
+    .posterz {
+        width:184px;
+        border-radius: 5px;
+        justify-content: center;
+        margin-right:5px;
+        z-index: 0;
+        margin-top:-70px;
+    }
+        /* 영화정보 */
+        .movietext {
+            margin-top:6px;
+        }
+        .grademov {
+            width:184px;
+            margin-left:6px;
+            margin-right:6px;
+            margin-top:-35px;
+            font-size:27px;
+            font-style:italic;
+        }
+        .movinfo {
+            margin:0 auto;
+            margin-top:20px;
 
-.posterz {
-    width:184px;
-    border-radius: 5px;
-    justify-content: center;
-    margin-right:5px;
-}
-.grademov {
-    width:184px;
-    margin-left:6px;
-    margin-right:6px;
-    margin-top:-35px;
-    font-size:27px;
-    font-style:italic;
-}
+        }
+        .movtitle{
+            width:184px;
+            font-size:13px;
+            display: flex;
+            justify-content: center;
+            margin-bottom:6px;
+            
+        }
+        .movtitle.title {
+            width:188px;
+        }
+        .movline2 {
+            display: flex;
+            justify-content: center;
+            font-size: 11px;
+            height:11px;
+            margin-top:10px;
+            padding-top:5px;
+            
+        }
+        .movpercent {
+            margin-right:3px;
+        } 
+        .movdday {
+            width:30px;;
+            justify-content: center;
+            display:flex;
+            color:#ed4c68;
+            border-right: 1px solid white;
+            margin-right:3px;
+            border-left: 1px solid white;
+            margin-left:3px;
+            padding-left: 5px;
+            padding-right:5px;
+        }
+        .btn_heart_rnd {
+            width: 16px;
+            height: 16px;
+            background-image: url(https://www.lottecinema.co.kr/NLCHS/Content/images/icon/heart_rnd_16_off.png);
+            background-color: transparent;
+            background-size: 16px;
+            border:none;
+            cursor: pointer;
+            margin-left:3px;
+            margin-top: -2px;;
+            
+        }
+        /* 호버시 나타나는 세부 창 */
+        .posterhover {
+            width:184px;
+            height:262.84px;
+            position: absolute;
+            margin-top:-262.84px;
+            visibility: hidden;
+            z-index: 30;
+            color:white;
+            background-color:rgba(0, 0, 0, 0.7);    
+        }
+        .intext {
+            /* width:150px;
+            height:30px; */
+            border-radius: 5px;
+            border: 1.5px solid white;
+            font-size: 14px;
+            margin-left:15px;
+            margin-right:15px;
+            padding-left:47px;
+            padding-top:6px;
+            padding-right:47px;
+            padding-bottom:6px;
+            cursor:pointer;
+        }
+        .intext.intext01 {
+            margin-top:90px;
+        }
+        .intext.intext02 {
+            margin-top:11.42px;
+        }
+        /* 슬라이드 앞 뒤 버튼 */
+        .prevbtn2 {
+            margin-left:420px;
+        }
+        .nextbtn2 {
+            margin-right:420px;
+        }
 
-
-
-/* 영화정보 */
-.movinfo {
-    margin:0 auto;
-    margin-top:20px;
-
-}
-.movtitle{
-    width:184px;
-    font-size:13px;
-    display: flex;
-    justify-content: center;
-    margin-bottom:6px;
-    
-}
-.movtitle.title {
-    width:188px;
-}
-.movline2 {
-    display: flex;
-    justify-content: center;
-    font-size: 11px;
-    height:11px;
-    margin-top:10px;
-    padding-top:5px;
-    
-}
-.movpercent {
-    margin-right:3px;
-} 
-
-.movdday {
-    width:30px;;
-    justify-content: center;
-    display:flex;
-    color:#ed4c68;
-    border-right: 1px solid white;
-    margin-right:3px;
-    border-left: 1px solid white;
-    margin-left:3px;
-    padding-left: 5px;
-    padding-right:5px;
-}
-.btn_heart_rnd {
-    width: 16px;
-    height: 16px;
-    background-image: url(https://www.lottecinema.co.kr/NLCHS/Content/images/icon/heart_rnd_16_off.png);
-    background-color: transparent;
-    background-size: 16px;
-    border:none;
-    cursor: pointer;
-    margin-left:3px;
-    margin-top: -2px;;
-    
-}
-.movpopular {
-    width:341px;
-    color: white;
-    height: 385px;
-}
-
-
-#movpre {
-    font-size:50px;
-    float:right;
-    margin-top:50%;
-}
-#movnext {
-    font-size:50px;
-    float:left;
-    margin-top:50%;
-}
-
-.blackbg {
-    height:30px;
-    background-color: black;}
 
 /* 바 공통 */
 .barname {
     font-size: 17px;
 }
-/* 스페셜바 */
+
+/* 스페셜관 */
 .specialbar {
     width: 980px;
     height: 101px;
     margin: 62px auto;;
 }
-
-#specialmore {
-    float:right;
-}
-#eventmore{
-    float:right;
-}
-#pressmore {
-    float:right;
-}
-
-#sp {
-    width: 980px;
-    border-top:1px dashed;
-    color:grey
-}
-
 .specialwrap {
     display:flex;
 }
+    /* 스페셜관-이미지 */
+    .spw {
+        margin:auto;
+        cursor:pointer;
+    }
 
-.spw {
-    margin:auto;
-}
+    /* 점선 */
+    #sp {
+        width: 980px;
+        border-top:1px dashed;
+        color:grey
+    }   
+    /* 스페셜관- 더보기 버튼 */
+    #specialmore {
+        float:right;
+    }
+    
+    
+
 
 /* 이벤트바 */
 .eventbar {
@@ -799,71 +710,81 @@ body{
     margin:auto;
     margin-bottom: 50px;
 }
+    /* 이벤트바-더보기 버튼 */
+    #eventmore{
+        float:right;
+    }
+    /* 이벤트그리드 */
 
-
-/* 이벤트그리드 */
-.line1 {
-    display:flex;
-    height:260px;
-    margin-top: 10px;
-}
-.line2{
-    display:flex;
-}
-
-#item1 {
-    width:181.99px;
+    .line1 {
+        display:flex;
+        height:260px;
+        margin-top: 10px;
+    }
+    .line2{
+        display:flex;
+    }
+    #item1 {
+        width:181.99px;
+        height:250px;
+        border-radius: 10px;
+        margin-right:10px;
+        cursor: pointer;
+    }
+    #item2 {
+        width:181.99px;
+        height:250px;
+        margin-right:10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #item3 {
+        width:285px;
+        height:250px;
+        margin-right:10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #item4 {
+        width:295.99px;
+        height:510.99px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #item5 {
+    width:477.99px;
     height:250px;
     border-radius: 10px;
     margin-right:10px;
-}
-#item2 {
-    width:181.99px;
-    height:250px;
-    margin-right:10px;
-    border-radius: 10px;
-}
-#item3 {
-    width:285px;
-    height:250px;
-    margin-right:10px;
-    border-radius: 10px;
-}
-#item4 {
-    width:295.99px;
-    height:510.99px;
-    border-radius: 10px;
-}
-#item5 {
-width:477.99px;
-height:250px;
-border-radius: 10px;
-margin-right:10px;
-}
-#item6 {
-    width:181.99px;
-    height:250px;
-    border-radius: 10px;
-}
+    cursor: pointer;
+    }
+    #item6 {
+        width:181.99px;
+        height:250px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 
 /* 시사회/무대인사 */
-
+    /* 시사회-더보기 버튼 */
+    #pressmore {
+        float:right;
+    }
 .pressbar {
     width:980px;
     height:214.82px;
     margin:auto;
 }
-
-.pressline1 {
+.presswrap {
     margin-top:10px;
     display:flex;
 }
-
 .pressitem {
     width:319px;
     height:186.92px;
     margin:auto;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -881,7 +802,7 @@ margin-right:10px;
 .discountitem {
     border-radius: 10px;
     margin:auto;
-
+    cursor: pointer;
 }
 
 /* 공지사항바 */
@@ -905,51 +826,51 @@ margin-right:10px;
     width:64px;
     z-index: 2;
 }
-/* 공지 슬라이더 */
+    /* 공지사항바-수직 슬라이더 */
+    .swiper3 {
+        width: 840px;
+        height: 30px;
+        overflow: hidden;
+        left:-300px;
+        z-index: -2;
+        float:left;
+        margin-left:20px;
+        align-items: center;
+    }
+    .swiper3-slide {
+        background: #fff;
+        align-items: center;
+        float:left;
+        cursor: pointer;
+    }
+    .swiper3-wrapper {
+        float:left;
+        margin-left:0px;
+    }
+    /* 더보기 선 */
+    #dp {
+        width: 980px;
+        color:#707070
+    }
 
-.swiper3 {
-    width: 840px;
-    height: 30px;
-    overflow: hidden;
-    left:-300px;
-    z-index: -2;
-    float:left;
-    margin-left:20px;
-    align-items: center;
 
-}
-
-.swiper3-slide {
-    background: #fff;
-    align-items: center;
-    float:left;
-    
-}
-
-.swiper3-wrapper {
-    float:left;
-    margin-left:0px;
-}
-
-/* 더보기 선 */
-#dp {
-    width: 980px;
-    color:#707070
-    
-}
 /* 여백 */
 .none {
     height:50px;
 }
+
+
 /* 하단광고 */
 .bottomad {
     width:980px;
     height:180px;
     margin: auto;
+    cursor: pointer;
 }
 .yellowbar {
     width:100%;
     height:240px;
+    cursor: pointer;
 }
 .yellowbg {
     width:100%;
@@ -986,6 +907,7 @@ margin-right:10px;
     display:flex;
     font-size: 12px;
     height:18px;
+    cursor: pointer;
 }
 .miniinfoitem1 {
     margin: 0 0px 0 10px;

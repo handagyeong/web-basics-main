@@ -30,1135 +30,1124 @@
        </style>
 </head>
 <body onload="showClock()">
-
-    <div class="black">
-        <header>
-            <!-- 헤더광고 -->
-            <div id="top" class="ad">
-                <!-- 헤더 광고 섹션 --> 
-                <img id="adimage" src="./image/advertisement.jpg" alt="광고이미지">
-                <span>
-                    <img id="close" src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/close_19_wht.png">
-                </span>
-            </div>
-            <div class="topmenu">    
-                <!-- 상단메뉴 첫번째줄 -->
-                <div class="menuline1">
-                    <!-- 좋아요 구독 팔로우   -->
-                    <div class="line1_side">
-                        <span class="btn_side">
-                            <a href="https://www.facebook.com/LotteCinema.kr">
-                                <img id="btn_facebook"
-                                    src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_facebook_wht.png">&nbsp;좋아요
-                            </a>
-                        </span>
-                        <span class="btn_side">
-                            <a href="https://www.youtube.com/channel/UCi4KivcV3a3yhkycFsjpalQ">
-                                <img id="btn_youtube"
-                                src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_youtube_wht.png">&nbsp;구독하기
-                            </a>
-                        </span>
-                        <span class="btn_side">
-                            <a href="https://www.instagram.com/lottecinema_official/">
-                                <img id="btn_instagram"
-                                    src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_follow_wht.png">&nbsp;팔로우
-                            </a>
-                        </span>
-                    </div>
-                    <!-- 로고 ; 클릭시 새로고침 -->
-                    <a onclick="location.reload();" class="logo">
-                        <img src="./image/logo.png">
-                    </a>
-                    <!-- 멤버십 고객센터 로그인 -->
-                    <div class="line1_side">
-                        <span class="btn_side">
-                            멤버십
-                        </span>
-                        <span class="btn_side">
-                            고객센터
-                        </span>
-                        <span class="btn_side">
-                        로그인
-                        </span>
-                    </div>
+  <!-- 검정배경화면 위 요소 -->
+  <div class="black">
+      <header>
+          <!-- 헤더 top 광고 -->
+          <div id="top" class="ad"> 
+              <img id="adimage" src="./image/advertisement.jpg" alt="광고이미지">
+              <span >
+                  <button id="close" onclick="closeclick()" > </button>
+              </span>
+          </div>
+          <div class="topmenu">    
+              <!-- 상단메뉴 첫번째줄 -->
+              <div class="menuline1">
+                  <!-- 좋아요 구독 팔로우   -->
+                  <div class="line1_side">
+                      <span class="btn_side">
+                          <a href="https://www.facebook.com/LotteCinema.kr">
+                              <img id="btn_facebook"
+                                  src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_facebook_wht.png">&nbsp;좋아요
+                          </a>
+                      </span>
+                      <span class="btn_side">
+                          <a href="https://www.youtube.com/channel/UCi4KivcV3a3yhkycFsjpalQ">
+                              <img id="btn_youtube"
+                              src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_youtube_wht.png">&nbsp;구독하기
+                          </a>
+                      </span>
+                      <span class="btn_side">
+                          <a href="https://www.instagram.com/lottecinema_official/">
+                              <img id="btn_instagram"
+                                  src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_follow_wht.png">&nbsp;팔로우
+                          </a>
+                      </span>
                   </div>
-                <!-- 구분선 -->
-                <hr id="hre">
-                <!-- 메뉴2번째줄; 예매~바로예매 -->
-                <div id="menuline2" class="menuline2">
-                    <div class="menuline2width">
-                        <div class="line2_main">
-                            <ul class="main">  
-                                <div id="main_title1" class="main_title main_title1" >예매</div>
-                                <div id="main_title2" class="main_title main_title2" >영화</div>
-                                <div id="main_title3" class="main_title main_title3" >영화관</div>
-                                <div id="main_title4" class="main_title main_title4" >이벤트</div>
-                                <div id="main_title5" class="main_titleend main_title5" >스토어</div>
-                            </ul>
-                            <div class="main_submenu">
-                                <ul class="main_sub main_sub1">
-                                    <div class="main_submenu">예매하기</div>
-                                    <div class="main_submenu">상영시간표</div>
-                                    <div class="main_submenu">할인안내</div>
-                                </ul>
-                                <ul class="main_sub main_sub2">
-                                    <div class="main_submenu">홈</div>
-                                    <div class="main_submenu">현재상영작</div>
-                                    <div class="main_submenu">상영예정작</div>
-                                    <div class="main_submenu">아르떼</div>
-                                </ul>
-                                <ul class="main_sub main_sub3">
-                                    <div class="main_submenu">스페셜관</div>
-                                    <div class="main_submenu">서울</div>
-                                    <div class="main_submenu">경기/인천</div>
-                                    <div class="main_submenu">충청/대전</div>
-                                    <div class="main_submenu">전라/광주</div>
-                                    <div class="main_submenu">경북/대구</div>
-                                    <div class="main_submenu">경남/부산/울산</div>
-                                    <div class="main_submenu">강원</div>
-                                    <div class="main_submenu">제주</div>
+                  <!-- 로고 ; 클릭시 새로고침 -->
+                  <a onclick="location.reload();" class="logo">
+                      <img src="./image/logo.png">
+                  </a>
+                  <!-- 멤버십 고객센터 로그인 -->
+                  <div class="line1_side">
+                      <span class="btn_side">
+                          멤버십
+                      </span>
+                      <span class="btn_side">
+                          고객센터
+                      </span>
+                      <span class="btn_side">
+                      로그인
+                      </span>
+                  </div>
+              </div>
+              <!-- 구분선 -->
+              <hr id="hre">
+              <!-- 메뉴2번째줄; 예매~바로예매 -->
+              <div id="menuline2" class="menuline2">
+                  <div class="menuline2width">
+                      <div class="line2_main">
+                          <ul class="main">  
+                              <div id="main_title1" class="main_title main_title1" >예매</div>
+                              <div id="main_title2" class="main_title main_title2" >영화</div>
+                              <div id="main_title3" class="main_title main_title3" >영화관</div>
+                              <div id="main_title4" class="main_title main_title4" >이벤트</div>
+                              <div id="main_title5" class="main_titleend main_title5" >스토어</div>
+                          </ul>
+                          <div class="main_submenu">
+                              <ul class="main_sub main_sub1">
+                                  <div class="main_submenu">예매하기</div>
+                                  <div class="main_submenu">상영시간표</div>
+                                  <div class="main_submenu">할인안내</div>
+                              </ul>
+                              <ul class="main_sub main_sub2">
+                                  <div class="main_submenu">홈</div>
+                                  <div class="main_submenu">현재상영작</div>
+                                  <div class="main_submenu">상영예정작</div>
+                                  <div class="main_submenu">아르떼</div>
+                              </ul>
+                              <ul class="main_sub main_sub3">
+                                  <div class="main_submenu">스페셜관</div>
+                                  <div class="main_submenu">서울</div>
+                                  <div class="main_submenu">경기/인천</div>
+                                  <div class="main_submenu">충청/대전</div>
+                                  <div class="main_submenu">전라/광주</div>
+                                  <div class="main_submenu">경북/대구</div>
+                                  <div class="main_submenu">경남/부산/울산</div>
+                                  <div class="main_submenu">강원</div>
+                                  <div class="main_submenu">제주</div>
 
-                                </ul>
-                                <ul class="main_sub main_sub4">
-                                    <div class="main_submenu">홈</div>
-                                    <div class="main_submenu">영화</div>
-                                    <div class="main_submenu">시사회/무대인사</div>
-                                    <div class="main_submenu">HOT</div>
-                                    <div class="main_submenu">제휴할인</div>
-                                    <div class="main_submenu">우리동네영화관</div>
-                                </ul>
-                                <ul class="main_sub main_sub5">
-                                    <div class="main_submenu">베스트</div>
-                                    <div class="main_submenu">관람권</div>
-                                    <div class="main_submenu">스낵음료</div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="line2_side">
-                            <span class="btn_side">
-                                <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_my_wht.png">&nbsp;회원가입
-                            </span>
-                            <span class="btn_side">
-                                <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_reserve_wht.png">&nbsp;바로예매
-                            </span>
-                            <span class="btn_side">
-                                <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_all_wht.png"> 
-                            </span>
+                              </ul>
+                              <ul class="main_sub main_sub4">
+                                  <div class="main_submenu">홈</div>
+                                  <div class="main_submenu">영화</div>
+                                  <div class="main_submenu">시사회/무대인사</div>
+                                  <div class="main_submenu">HOT</div>
+                                  <div class="main_submenu">제휴할인</div>
+                                  <div class="main_submenu">우리동네영화관</div>
+                              </ul>
+                              <ul class="main_sub main_sub5">
+                                  <div class="main_submenu">베스트</div>
+                                  <div class="main_submenu">관람권</div>
+                                  <div class="main_submenu">스낵음료</div>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="line2_side">
+                          <span class="btn_side">
+                              <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_my_wht.png">&nbsp;회원가입
+                          </span>
+                          <span class="btn_side">
+                              <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_reserve_wht.png">&nbsp;바로예매
+                          </span>
+                          <span class="btn_side">
+                              <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_all_wht.png"> 
+                          </span>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="bgimage" >
-                <div class="background">
-                    <div class="inbackground">
-                        <div class="dotssection">
-                            <!-- 스와이퍼 도트바 -->
-                            <div class="swiper-dotbar">
-                                <div class="material-icons swiper-button-start" id="startbtn">
-                                    play_arrow
-                                    </div>
-                                <div id="stopbtn" class="material-icons swiper-button-stop">
-                                    stop
-                                </div>  
-                                <dic class="swiper-pagination">
-                                </dic>
-
-                            </div>
-                        </div>
-
-                        <!-- Swiper -->
-                        <div class="swiper-container swiper1">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide swiper1-slide slide1"></div>
-                                <div class="swiper-slide swiper1-slide slide2"></div>
-                                <div class="swiper-slide swiper1-slide slide3"></div>
-                                <div class="swiper-slide swiper1-slide slide4"></div>
-                                <div class="swiper-slide swiper1-slide slide5"></div>
-                                <div class="swiper-slide swiper1-slide slide6"></div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>                                                        
-                                <img id="playbtn" src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
-                            
-                        </div>
-
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            <div id="mainplaybtn">
-              <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
-            </div>
-        </header>
-    </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      
+      <!-- 메인슬라이더(스와이퍼) -->
+      <div id="mainslider" >
+          <!-- 메인스와이퍼-도트바 -->
+          <div class="dotssection">
+              <div class="swiper-dotbar">
+                  <div class="material-icons swiper-button-start" id="startbtn">
+                      play_arrow
+                      </div>
+                  <div id="stopbtn" class="material-icons swiper-button-stop">
+                      stop
+                  </div>  
+                  <dic class="swiper-pagination">
+                  </dic>
+              </div>
+          </div>
+          <!-- 메인스와이퍼 -->
+          <div class="swiper-container swiper1">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper1-slide slide1"></div>
+                  <div class="swiper-slide swiper1-slide slide2"></div>
+                  <div class="swiper-slide swiper1-slide slide3"></div>
+                  <div class="swiper-slide swiper1-slide slide4"></div>
+                  <div class="swiper-slide swiper1-slide slide5"></div>
+                  <div class="swiper-slide swiper1-slide slide6"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>                                                        
+          </div>
+      </div>
+      <div id="mainplaybtn">
+        <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/main/btn_main_visual_play.png">
+      </div>
+  </div>
     
 
-    <!-- 시간 기준 잘나가는 영화 네비게이션 -->
-    <div class="bestmovie">
-           <!-- 인기영화 슬라이드 -->
-      <div class="swiper-container swiper2">
-        <li class="time">
-          <div>
-              <img class="clockimg" src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/time2.png">
-
-            </div>
-          <div id="clock" class="clock"></div>
-        </li>
-          <div class="swiper-wrapper swiper-wrapper2">
-            <div class="swiper-slide">
-              <div id="poster1" class="poster">
-                <img id="poster01" class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202012/16557_101_1.jpg"/>
-                  <div class="posterhover" id="posterhover01">
-                    <div class="intext intext01" >
-                      예매하기
-                    </div>
-                    <div class="intext intext02">
-                      상세정보
-                    </div>
-                  </div>
-                  <div class="movietext">
-                  <div class="grademov">1</div>
-                  <div class="movinfo">
-                    <div class="movtitle">서복</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 30.9%</div>
-                      <div class="movdday">D-1</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
+  <!-- 시간 기준 잘나가는 영화 슬라이드 -->
+  <div class="bestmovie">
+    <div class="swiper-container swiper2">
+      <!-- 실시간 표시 -->
+      <li class="time">
+        <div>
+            <img class="clockimg" src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/time2.png">
+          </div>
+        <div id="clock" class="clock"></div>
+      </li>
+      <!-- 슬라이드 -->
+      <div class="swiper-wrapper swiper-wrapper2">
+        <div class="swiper-slide">
+          <div id="poster1" class="poster">
+            <img id="poster01" class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202012/16557_101_1.jpg"/>
+              <div class="posterhover" id="posterhover01">
+                <div class="intext intext01" >
+                  예매하기
+                </div>
+                <div class="intext intext02">
+                  상세정보
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster2" class="poster">
-                <img
-                  id="poster02"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202104/17188_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover02">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">2</div>
-                  <div class="movinfo">
-                    <div class="movtitle">명탐정 코난:비색의 탄환</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 23.9%</div>
-                      <div class="movdday">D-2</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster3" class="poster">
-                <img
-                  id="poster03"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202104/17215_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover03">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">3</div>
-                  <div class="movinfo">
-                    <div class="movtitle">어른들은 몰라요</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 10.9%</div>
-                      <div class="movdday">D-1</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster4" class="poster">
-                <img
-                  id="poster04"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202101/16908_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover04">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">4</div>
-                  <div class="movinfo">
-                    <div class="movtitle">극장판 귀멸의 칼날:무한열차편</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 4.4%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />9.1
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster5" class="poster">
-                <img
-                  id="poster05"
-                  class="posterz"
-                  src="https://caching2.lottecinema.co.kr/lotte_image/2020/Hyundaicard/Hyundaicard_184262.jpg"
-                />
-                <div class="movietext">
-                  <div class="grademov">AD</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster6" class="poster">
-                <img
-                  id="poster06"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17450_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover06">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">5</div>
-                  <div class="movinfo">
-                    <div class="movtitle">낫아웃</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 3.5%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />5.5
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster7" class="poster">
-                <img
-                  id="poster07"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17428_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover07">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">6</div>
-                  <div class="movinfo">
-                    <div class="movtitle">프로페서 앤 매드맨</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 3.4%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />9.1
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster8" class="poster">
-                <img
-                  id="poster08"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17336_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover08">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">7</div>
-                  <div class="movinfo">
-                    <div class="movtitle">캐시트럭</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 1.4%</div>
-                      <div class="movdday">D-2</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div id="poster9" class="poster">
-                <img
-                  id="poster09"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17374_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover09">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">8</div>
-                  <div class="movinfo">
-                    <div class="movtitle">파이프라인</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.8%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />7.6
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div  class="poster">
-                <img
-                  id="poster10"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17457_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover10">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">9</div>
-                  <div class="movinfo">
-                    <div class="movtitle">썰</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.7%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />5.3
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster11"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17542_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover11">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">10</div>
-                  <div class="movinfo">
-                    <div class="movtitle">아야와 마녀</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.5%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />10
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster12"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17547_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover12">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">11</div>
-                  <div class="movinfo">
-                    <div class="movtitle">콰이어트 플레이스 2</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.5%</div>
-                      <div class="movdday">D-6</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster13"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17439_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover13">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">12</div>
-                  <div class="movinfo">
-                    <div class="movtitle">클라이밍</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.4%</div>
-                      <div class="movdday">D-6</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster14"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17374_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover14">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">13</div>
-                  <div class="movinfo">
-                    <div class="movtitle">파이프라인</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.2%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />7.5
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster15"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17548_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover15">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">14</div>
-                  <div class="movinfo">
-                    <div class="movtitle">콰이어트 플레이스 1+2편 연속… </div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.2%</div>
-                      <div class="movdday">D-6</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster16"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17479_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover16">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">15</div>
-                  <div class="movinfo">
-                    <div class="movtitle title">[Class in Cinema] 그럼에도 불…</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">D-4</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster17"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17395_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover17">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">16</div>
-                  <div class="movinfo">
-                    <div class="movtitle">실크 로드</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />7.3
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster18"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17479_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover18">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">17</div>
-                  <div class="movinfo">
-                    <div class="movtitle title">[Class in Cinema] 그럼에도 불…</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">D-5</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster19"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17459_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover19">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">18</div>
-                  <div class="movinfo">
-                    <div class="movtitle">강호아녀</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">
-                        <img 
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />9.0
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster20"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17404_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover20">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">19</div>
-                  <div class="movinfo">
-                    <div class="movtitle">루카</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">D-6</div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster21"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17296_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover21">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">20</div>
-                  <div class="movinfo">
-                    <div class="movtitle">도라에몽: 스탠바이미 2</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />8.2
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="poster">
-                <img
-                  id="poster22"
-                  class="posterz"
-                  src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17317_101_1.jpg"
-                />
-                <div class="posterhover" id="posterhover22">
-                  <div class="intext intext01" >
-                    예매하기
-                  </div>
-                  <div class="intext intext02">
-                    상세정보
-                  </div>
-                </div>
-                <div class="movietext">
-                  <div class="grademov">21</div>
-                  <div class="movinfo">
-                    <div class="movtitle">애플</div>
-                    <div class="movline2">
-                      <div class="movpercent">예매율 0.1%</div>
-                      <div class="movdday">
-                        <img
-                          src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
-                        />8.0
-                      </div>
-                      <span class="heart">
-                        <button type="button" class="btn_heart_rnd"></button>
-                      </span>
-                    </div>
-                  </div>
+              <div class="movietext">
+              <div class="grademov">1</div>
+              <div class="movinfo">
+                <div class="movtitle">서복</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 30.9%</div>
+                  <div class="movdday">D-1</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      <div class="swiper-button-prev prevbtn2"></div>
-      <div class="swiper-button-next nextbtn2"></div>
-    </div>
+        <div class="swiper-slide">
+          <div id="poster2" class="poster">
+            <img
+              id="poster02"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202104/17188_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover02">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">2</div>
+              <div class="movinfo">
+                <div class="movtitle">명탐정 코난:비색의 탄환</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 23.9%</div>
+                  <div class="movdday">D-2</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster3" class="poster">
+            <img
+              id="poster03"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202104/17215_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover03">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">3</div>
+              <div class="movinfo">
+                <div class="movtitle">어른들은 몰라요</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 10.9%</div>
+                  <div class="movdday">D-1</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster4" class="poster">
+            <img
+              id="poster04"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202101/16908_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover04">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">4</div>
+              <div class="movinfo">
+                <div class="movtitle">극장판 귀멸의 칼날:무한열차편</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 4.4%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />9.1
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster5" class="poster">
+            <img
+              id="poster05"
+              class="posterz"
+              src="https://caching2.lottecinema.co.kr/lotte_image/2020/Hyundaicard/Hyundaicard_184262.jpg"
+            />
+            <div class="movietext">
+              <div class="grademov">AD</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster6" class="poster">
+            <img
+              id="poster06"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17450_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover06">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">5</div>
+              <div class="movinfo">
+                <div class="movtitle">낫아웃</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 3.5%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />5.5
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster7" class="poster">
+            <img
+              id="poster07"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17428_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover07">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">6</div>
+              <div class="movinfo">
+                <div class="movtitle">프로페서 앤 매드맨</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 3.4%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />9.1
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster8" class="poster">
+            <img
+              id="poster08"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17336_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover08">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">7</div>
+              <div class="movinfo">
+                <div class="movtitle">캐시트럭</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 1.4%</div>
+                  <div class="movdday">D-2</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div id="poster9" class="poster">
+            <img
+              id="poster09"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17374_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover09">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">8</div>
+              <div class="movinfo">
+                <div class="movtitle">파이프라인</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.8%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />7.6
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div  class="poster">
+            <img
+              id="poster10"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17457_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover10">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">9</div>
+              <div class="movinfo">
+                <div class="movtitle">썰</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.7%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />5.3
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster11"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17542_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover11">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">10</div>
+              <div class="movinfo">
+                <div class="movtitle">아야와 마녀</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.5%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />10
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster12"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17547_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover12">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">11</div>
+              <div class="movinfo">
+                <div class="movtitle">콰이어트 플레이스 2</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.5%</div>
+                  <div class="movdday">D-6</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster13"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17439_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover13">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">12</div>
+              <div class="movinfo">
+                <div class="movtitle">클라이밍</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.4%</div>
+                  <div class="movdday">D-6</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster14"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17374_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover14">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">13</div>
+              <div class="movinfo">
+                <div class="movtitle">파이프라인</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.2%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />7.5
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster15"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17548_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover15">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">14</div>
+              <div class="movinfo">
+                <div class="movtitle">콰이어트 플레이스 1+2편 연속… </div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.2%</div>
+                  <div class="movdday">D-6</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster16"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17479_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover16">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">15</div>
+              <div class="movinfo">
+                <div class="movtitle title">[Class in Cinema] 그럼에도 불…</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">D-4</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster17"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17395_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover17">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">16</div>
+              <div class="movinfo">
+                <div class="movtitle">실크 로드</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />7.3
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster18"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17479_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover18">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">17</div>
+              <div class="movinfo">
+                <div class="movtitle title">[Class in Cinema] 그럼에도 불…</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">D-5</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster19"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17459_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover19">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">18</div>
+              <div class="movinfo">
+                <div class="movtitle">강호아녀</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">
+                    <img 
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />9.0
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster20"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202106/17404_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover20">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">19</div>
+              <div class="movinfo">
+                <div class="movtitle">루카</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">D-6</div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster21"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17296_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover21">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">20</div>
+              <div class="movinfo">
+                <div class="movtitle">도라에몽: 스탠바이미 2</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />8.2
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="poster">
+            <img
+              id="poster22"
+              class="posterz"
+              src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202105/17317_101_1.jpg"
+            />
+            <div class="posterhover" id="posterhover22">
+              <div class="intext intext01" >
+                예매하기
+              </div>
+              <div class="intext intext02">
+                상세정보
+              </div>
+            </div>
+            <div class="movietext">
+              <div class="grademov">21</div>
+              <div class="movinfo">
+                <div class="movtitle">애플</div>
+                <div class="movline2">
+                  <div class="movpercent">예매율 0.1%</div>
+                  <div class="movdday">
+                    <img
+                      src="https://www.lottecinema.co.kr/NLCHS/Content/images/movie/ic_star.png"
+                    />8.0
+                  </div>
+                  <span class="heart">
+                    <button type="button" class="btn_heart_rnd"></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="swiper-button-prev prevbtn2"></div>
+    <div class="swiper-button-next nextbtn2"></div>
+  </div>
 
-    <!-- 공간채우기 -->
-    <div class="blackbg"></div>
-    
-    <!-- 스페셜관 -->
-    <div class="specialbar">
-        <div class="barname">
-            스페셜관
-            <span id="specialmore" class="material-icons">
-                더보기 arrow_forward_ios 
-                </span>
-        </div>
-        <hr id="sp">
-        <ul class="specialwrap">
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/e2a94c82115c46f7b326baee6e10266a.png">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/3ffca854b1844fdc8b54d8d9db45a03f.png">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/ff43cb260a2647dbb5f3c62b709103c4.png">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/c9078226c9ad4085b1b629bee2aba138.png">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/61fb906fbd9b4ff1b34d6e0bd78dc655.png">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/2a366799460a49359bf93250f50852cf.png">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/208a5ede362244fb8ab2e5cc3ab07529.PNG">
-            </li>
-            <li class="spw">
-                <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/5c23288d3a104f7fa4f7d3e725a2c6a8.PNG">
-            </li>
-        </ul>
-    </div>
+  <!-- 공간채우기 -->
+  <div class="blackbg"></div>
+  
+  <!-- 스페셜관 -->
+  <div class="specialbar">
+      <div class="barname">
+          스페셜관
+          <span id="specialmore" class="material-icons">
+              더보기 arrow_forward_ios 
+              </span>
+      </div>
+      <hr id="sp">
+      <ul class="specialwrap">
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/e2a94c82115c46f7b326baee6e10266a.png">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/3ffca854b1844fdc8b54d8d9db45a03f.png">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/ff43cb260a2647dbb5f3c62b709103c4.png">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/c9078226c9ad4085b1b629bee2aba138.png">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/61fb906fbd9b4ff1b34d6e0bd78dc655.png">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/2a366799460a49359bf93250f50852cf.png">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/208a5ede362244fb8ab2e5cc3ab07529.PNG">
+          </li>
+          <li class="spw">
+              <img src="https://caching.lottecinema.co.kr//Media/WebAdmin/5c23288d3a104f7fa4f7d3e725a2c6a8.PNG">
+          </li>
+      </ul>
+  </div>
 
-    <!-- 이벤트 -->
-    <div class="eventbar">
-        <div class="event">
-            이벤트
-            <span id="eventmore" class="material-icons">
-                더보기 arrow_forward_ios 
-                </span>
-        </div>
-        <ul class="grid-container">
-            <div class="line1">
-            <li class="item1">
-                <img id="item1" src="https://caching.lottecinema.co.kr//Media/Event/1752c8cccf6c4330877975244736bd68.jpg">
-            </li>
-            <li class="item2">
-                <img id="item2" src="https://caching.lottecinema.co.kr//Media/Event/4f43e222cb1841a1b50190c147b93921.jpg">
-            </li>
-            <li class="item3">
-                <img id="item3" src="https://caching.lottecinema.co.kr//Media/Event/66eb918a37c94cb2889c77d060b2ec75.jpg">
-            </li>  
-            <li class="item4">
-                <img id="item4" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Inbyu/Inbyu_295511.png">
-            </li>
-        </div>
-        <div class="line2">
-            <li class="item5">
-                <img id="item5" src="https://caching.lottecinema.co.kr//Media/Event/54250fc5c47844bea4e6e4c212a1957e.jpg">
-            </li>
-            <li class="item6">
-                <img id="item6" src="https://caching.lottecinema.co.kr//Media/Event/3145ddaeed054c5d89adc3e3a34f768b.jpg">
-            </li></div>
-        </ul>
-            
-    </div>
+  <!-- 이벤트 -->
+  <div class="eventbar">
+      <div class="event">
+          이벤트
+          <span id="eventmore" class="material-icons">
+              더보기 arrow_forward_ios 
+              </span>
+      </div>
+      <ul class="grid-container">
+          <div class="line1">
+          <li>
+              <img id="item1" src="https://caching.lottecinema.co.kr//Media/Event/1752c8cccf6c4330877975244736bd68.jpg">
+          </li>
+          <li>
+              <img id="item2" src="https://caching.lottecinema.co.kr//Media/Event/4f43e222cb1841a1b50190c147b93921.jpg">
+          </li>
+          <li>
+              <img id="item3" src="https://caching.lottecinema.co.kr//Media/Event/66eb918a37c94cb2889c77d060b2ec75.jpg">
+          </li>  
+          <li>
+              <img id="item4" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Inbyu/Inbyu_295511.png">
+          </li>
+      </div>
+      <div class="line2">
+          <li>
+              <img id="item5" src="https://caching.lottecinema.co.kr//Media/Event/54250fc5c47844bea4e6e4c212a1957e.jpg">
+          </li>
+          <li>
+              <img id="item6" src="https://caching.lottecinema.co.kr//Media/Event/3145ddaeed054c5d89adc3e3a34f768b.jpg">
+          </li></div>
+      </ul>
+          
+  </div>
 
-    <!-- 시사회/무대인사  -->
-    <div class="pressbar">
-        <div class="barname">
-            시사회/무대인사
-            <span id="pressmore" class="material-icons">
-                더보기 arrow_forward_ios 
-                </span>
-        </div>
-        <ul class="pressgrid">
-            <div class="pressline1">
-                <li class="pressitem">
-                    <img class="pressitem" src="./image/pressitem1.jpg">
-                </li>
-                <li class="pressitem">
-                    <img class="pressitem" src="./image/pressitem2.jpg">
-                </li>
-                <li class="pressitem">
-                    <img class="pressitem" src="./image/pressitem3.jpg">
-                </li>
-            </div>
-        </ul>
-    </div>
+  <!-- 시사회/무대인사  -->
+  <div class="pressbar">
+      <div class="barname">
+          시사회/무대인사
+          <span id="pressmore" class="material-icons">
+              더보기 arrow_forward_ios 
+              </span>
+      </div>
+      <ul class="pressgrid">
+          <div class="presswrap">
+              <li class="pressitem">
+                  <img class="pressitem" src="./image/pressitem1.jpg">
+              </li>
+              <li class="pressitem">
+                  <img class="pressitem" src="./image/pressitem2.jpg">
+              </li>
+              <li class="pressitem">
+                  <img class="pressitem" src="./image/pressitem3.jpg">
+              </li>
+          </div>
+      </ul>
+  </div>
 
-        <!-- 할인안내~브라보클럽  -->
-    <div class="discountbar">
-        <ul class="discountgrid">
-                <li class="discountitem">
-                    <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/3423e358b74d49d5b12867c7d9c6f6a8.png">
-                </li>
-                <li class="discountitem">
-                    <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/16b056e5e6a04c609b94a5c21e786d3b.png">
-                </li>
-                <li class="discountitem">
-                    <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/9fd4a77cd6a44a39aa35d07e5bb8a010.png">
-                </li>
-                <li class="discountitem">
-                    <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/3633088df0644062b53cd88b34067895.png">
-                </li>
-                <li class="discountitem">
-                    <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/9c4e2721ecdd488d86df6d27e3c2a000.png">
-                </li>
-        </ul>
-    </div>
-    <!-- 공지사항 -->
-    <div class="noticebar">
-        <div class="noticeline1">
-            <div class="notice">
-                공지사항
-            </div>
-        <!-- 공지사항 swiper -->
-        <div class="swiper-container swiper3">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper3-slide">롯데시네마 영구VIP 서비스 종료 안내</div>
-                <div class="swiper-slide swiper3-slide">KT멤버십 영화예매 적립 서비스 안내</div>
-                <div class="swiper-slide swiper3-slide">마스크 착용 의무화 행정명령 시행 안내</div>
-            </div>
-        </div>
-            <div id="noticemore" class="material-icons">
-                더보기 arrow_forward_ios 
-            </div>
-        </div>
-    </div>
+      <!-- 할인안내~브라보클럽  -->
+  <div class="discountbar">
+      <ul class="discountgrid">
+              <li class="discountitem">
+                  <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/3423e358b74d49d5b12867c7d9c6f6a8.png">
+              </li>
+              <li class="discountitem">
+                  <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/16b056e5e6a04c609b94a5c21e786d3b.png">
+              </li>
+              <li class="discountitem">
+                  <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/9fd4a77cd6a44a39aa35d07e5bb8a010.png">
+              </li>
+              <li class="discountitem">
+                  <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/3633088df0644062b53cd88b34067895.png">
+              </li>
+              <li class="discountitem">
+                  <img class="discountitem" src="https://caching.lottecinema.co.kr//Media/WebAdmin/9c4e2721ecdd488d86df6d27e3c2a000.png">
+              </li>
+      </ul>
+  </div>
+  <!-- 공지사항 -->
+  <div class="noticebar">
+      <div class="noticeline1">
+          <div class="notice">
+              공지사항
+          </div>
+      <!-- 공지사항 swiper -->
+      <div class="swiper-container swiper3">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide swiper3-slide">롯데시네마 영구VIP 서비스 종료 안내</div>
+              <div class="swiper-slide swiper3-slide">KT멤버십 영화예매 적립 서비스 안내</div>
+              <div class="swiper-slide swiper3-slide">마스크 착용 의무화 행정명령 시행 안내</div>
+          </div>
+      </div>
+          <div id="noticemore" class="material-icons">
+              더보기 arrow_forward_ios 
+          </div>
+      </div>
+  </div>
 
-    <hr id="dp">
+  <hr id="dp">
 
-    <div class="none"></div>
+  <div class="none"></div>
 
-    <!-- 하단광고 -->
-    <div class="bottomad">
-        <img src="./image/Yuda.jpg">
-    </div>
+  <!-- 하단광고 -->
+  <div class="bottomad">
+      <img src="./image/Yuda.jpg">
+  </div>
 
-    <div class="none"></div>
+  <div class="none"></div>
 
-    <!-- 노랑배경광고 -->
-    <div class="yellowbar">
-        <div class="yellowbg">
-            <div class="clear"></div>
-            <div class="yellowbackground"></div>
-        </div>
-        <div class="yellowad">
-            <img class="yellowaditem" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Inbyu/0316/Inbyu_980240.png">
-        </div>
-    </div>
+  <!-- 노랑배경광고 -->
+  <div class="yellowbar">
+      <div class="yellowbg">
+          <div class="clear"></div>
+          <div class="yellowbackground"></div>
+      </div>
+      <div class="yellowad">
+          <img class="yellowaditem" src="https://caching2.lottecinema.co.kr/lotte_image/2021/Inbyu/0316/Inbyu_980240.png">
+      </div>
+  </div>
 
-    <!-- 정보글 -->
-    <div class="info">
-        <div class="greylogo">
-            <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/logo_footer.gif">
-        </div>
-        <div class="miniinfo">
-            <div class="miniinfo">
-                <div class="miniinfoitem1">
-                    회원약관
-                </div>
-                <div class="miniinfoitem1">
-                    개인정보처리방침
-                </div>
-                <div class="miniinfoitem1">
-                    이메일무단수집거부
-                </div>
-                <div class="miniinfoitem1">
-                    영상정보처리기기 운영 및 관리방침
-                </div>
-                <div class="miniinfoitem1">
-                    L.POINT회원안내
-                </div>
-                <div class="miniinfoitem1">
-                    배정기준
-                </div>
-                <div class="miniinfoitem1">
-                    채용안내
-                </div>
-                <div class="miniinfoitem1">
-                    광고/임대문의
-                </div>
-                <div class="miniinfoitem1">
-                    윤리경영
-                </div>
-                <div class="borderlast1">
-                    기업정보
-                </div>
-            </div>
-        </div>
-        <div class="miniinfo2">
-            <div class="miniinfoline">
-                <div class="miniinfoitem">
-                    서울특별시 송파구 올림픽로 300 롯데월드타워 27층
-                </div>
-                <div class="borderlast">
-                    고객센터 1544-8855
-            </div></div>
-        </div>
-        <div class="miniinfo3">
-            <div class="miniinfoline">
-                <div class="miniinfoitem">
-                    대표이사 기원규
-                </div>
-                <div class="miniinfoitem">
-                    사업자등록번호 313-87-00979
-                </div>
-                <div class="miniinfoitem">
-                    통신판매업신고번호 제1184호
-                </div>
-                <div class="borderlast">
-                    개인정보 보호 최고 책임자 김무성
-            </div></div>
-        </div>
-        <div class="miniinfo3">
-            <div class="miniinfoline">
-                <div class="borderlast">
-                    COPYRIGHT© LOTTE CINEMA ALL RIGHT RESERVED.
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- 맨밑배너 -->
-    <div  class="bottombar">
-        <div class="bottombg">
-            <div class="bottombackground"></div>
-        </div>
-        <div class="bottom">
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_NCSI6.PNG?v=21040801">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_kcsi.png?v=21020102">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_kssqi-1.png?v=21020101">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_brandcinema.png?v=21020101">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_greenstar.png?v=21020101">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_brandstar.png?v=21020101">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_familyship.png?v=21020101">
-            </div>
-            <div class="bottomitem">
-                <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_winner.png?v=21020101">
-            </div>
-        </div>
-    </div>
+  <!-- 정보글 -->
+  <div class="info">
+      <div class="greylogo">
+          <img src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/logo_footer.gif">
+      </div>
+      <div class="miniinfo">
+          <div class="miniinfo">
+              <div class="miniinfoitem1">
+                  회원약관
+              </div>
+              <div class="miniinfoitem1">
+                  개인정보처리방침
+              </div>
+              <div class="miniinfoitem1">
+                  이메일무단수집거부
+              </div>
+              <div class="miniinfoitem1">
+                  영상정보처리기기 운영 및 관리방침
+              </div>
+              <div class="miniinfoitem1">
+                  L.POINT회원안내
+              </div>
+              <div class="miniinfoitem1">
+                  배정기준
+              </div>
+              <div class="miniinfoitem1">
+                  채용안내
+              </div>
+              <div class="miniinfoitem1">
+                  광고/임대문의
+              </div>
+              <div class="miniinfoitem1">
+                  윤리경영
+              </div>
+              <div class="borderlast1">
+                  기업정보
+              </div>
+          </div>
+      </div>
+      <div class="miniinfo2">
+          <div class="miniinfoline">
+              <div class="miniinfoitem">
+                  서울특별시 송파구 올림픽로 300 롯데월드타워 27층
+              </div>
+              <div class="borderlast">
+                  고객센터 1544-8855
+          </div></div>
+      </div>
+      <div class="miniinfo3">
+          <div class="miniinfoline">
+              <div class="miniinfoitem">
+                  대표이사 기원규
+              </div>
+              <div class="miniinfoitem">
+                  사업자등록번호 313-87-00979
+              </div>
+              <div class="miniinfoitem">
+                  통신판매업신고번호 제1184호
+              </div>
+              <div class="borderlast">
+                  개인정보 보호 최고 책임자 김무성
+          </div></div>
+      </div>
+      <div class="miniinfo3">
+          <div class="miniinfoline">
+              <div class="borderlast">
+                  COPYRIGHT© LOTTE CINEMA ALL RIGHT RESERVED.
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- 맨밑배너 -->
+  <div  class="bottombar">
+      <div class="bottombg">
+          <div class="bottombackground"></div>
+      </div>
+      <div class="bottom">
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_NCSI6.PNG?v=21040801">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_kcsi.png?v=21020102">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_kssqi-1.png?v=21020101">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_brandcinema.png?v=21020101">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_greenstar.png?v=21020101">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_brandstar.png?v=21020101">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_familyship.png?v=21020101">
+          </div>
+          <div class="bottomitem">
+              <img class="bottomitem" src="https://www.lottecinema.co.kr/NLCHS/Content/images/common/footer_award_winner.png?v=21020101">
+          </div>
+      </div>
+  </div>
 </body>
 </html>
